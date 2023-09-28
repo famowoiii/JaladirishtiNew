@@ -1,0 +1,12 @@
+.navbar {
+  position: absolute;
+  background-color: rgb(0, 69, 155);
+  height: 4rem;
+  min-width: 100%;
+  z-index: 1;
+}
+.tentang-wrapper {
+  padding-top: 6rem;
+  padding-left: 5rem;
+  padding-right: 4rem;
+}

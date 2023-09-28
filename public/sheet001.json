@@ -1,0 +1,1183 @@
+[
+ {
+  "OBJECTID": 1,
+  "Cnt_NAMOBJ": 162,
+  "Ave_gridcode": 1.9
+ },
+ {
+  "OBJECTID": 2,
+  "NAMOBJ": "BAMBE",
+  "Cnt_NAMOBJ": 2,
+  "Ave_gridcode": 1
+ },
+ {
+  "OBJECTID": 3,
+  "NAMOBJ": "BENOWO",
+  "Cnt_NAMOBJ": 22,
+  "Ave_gridcode": 1.7
+ },
+ {
+  "OBJECTID": 4,
+  "NAMOBJ": "BERBEK",
+  "Cnt_NAMOBJ": 4,
+  "Ave_gridcode": 1.3
+ },
+ {
+  "OBJECTID": 5,
+  "NAMOBJ": "BUNGURASIH",
+  "Cnt_NAMOBJ": 5,
+  "Ave_gridcode": 1.6
+ },
+ {
+  "OBJECTID": 6,
+  "NAMOBJ": "GADUNG",
+  "Cnt_NAMOBJ": 6,
+  "Ave_gridcode": 1.7
+ },
+ {
+  "OBJECTID": 7,
+  "NAMOBJ": "GEMPOLKURUNG",
+  "Cnt_NAMOBJ": 1,
+  "Ave_gridcode": 0
+ },
+ {
+  "OBJECTID": 8,
+  "NAMOBJ": "GENTING",
+  "Cnt_NAMOBJ": 1,
+  "Ave_gridcode": 0
+ },
+ {
+  "OBJECTID": 9,
+  "NAMOBJ": "JANTI",
+  "Cnt_NAMOBJ": 5,
+  "Ave_gridcode": 1.6
+ },
+ {
+  "OBJECTID": 10,
+  "NAMOBJ": "JONO",
+  "Cnt_NAMOBJ": 15,
+  "Ave_gridcode": 1.9
+ },
+ {
+  "OBJECTID": 11,
+  "NAMOBJ": "KEDANYANG",
+  "Cnt_NAMOBJ": 4,
+  "Ave_gridcode": 1.5
+ },
+ {
+  "OBJECTID": 12,
+  "NAMOBJ": "KEDUNGCOWEK",
+  "Cnt_NAMOBJ": 6,
+  "Ave_gridcode": 1.7
+ },
+ {
+  "OBJECTID": 13,
+  "NAMOBJ": "KEDUNGREJO",
+  "Cnt_NAMOBJ": 4,
+  "Ave_gridcode": 1.5
+ },
+ {
+  "OBJECTID": 14,
+  "NAMOBJ": "KEL. AIRLANGGA",
+  "Cnt_NAMOBJ": 8,
+  "Ave_gridcode": 1.6
+ },
+ {
+  "OBJECTID": 15,
+  "NAMOBJ": "KEL. ALUN-ALUNCONTONG",
+  "Cnt_NAMOBJ": 12,
+  "Ave_gridcode": 1.8
+ },
+ {
+  "OBJECTID": 16,
+  "NAMOBJ": "KEL. AMPEL",
+  "Cnt_NAMOBJ": 7,
+  "Ave_gridcode": 1.7
+ },
+ {
+  "OBJECTID": 17,
+  "NAMOBJ": "KEL. ASEMROWO",
+  "Cnt_NAMOBJ": 77,
+  "Ave_gridcode": 1.7
+ },
+ {
+  "OBJECTID": 18,
+  "NAMOBJ": "KEL. BABATAN",
+  "Cnt_NAMOBJ": 16,
+  "Ave_gridcode": 1.9
+ },
+ {
+  "OBJECTID": 19,
+  "NAMOBJ": "KEL. BABATJERAWAT",
+  "Cnt_NAMOBJ": 72,
+  "Ave_gridcode": 1.7
+ },
+ {
+  "OBJECTID": 20,
+  "NAMOBJ": "KEL. BALASKLUMPRIK",
+  "Cnt_NAMOBJ": 21,
+  "Ave_gridcode": 1.9
+ },
+ {
+  "OBJECTID": 21,
+  "NAMOBJ": "KEL. BALONGSARI",
+  "Cnt_NAMOBJ": 11,
+  "Ave_gridcode": 1.7
+ },
+ {
+  "OBJECTID": 22,
+  "NAMOBJ": "KEL. BANGKINGAN",
+  "Cnt_NAMOBJ": 5,
+  "Ave_gridcode": 1.6
+ },
+ {
+  "OBJECTID": 23,
+  "NAMOBJ": "KEL. BANJARSUGIHAN",
+  "Cnt_NAMOBJ": 21,
+  "Ave_gridcode": 1.7
+ },
+ {
+  "OBJECTID": 24,
+  "NAMOBJ": "KEL. BANYUURIP",
+  "Cnt_NAMOBJ": 10,
+  "Ave_gridcode": 1.8
+ },
+ {
+  "OBJECTID": 25,
+  "NAMOBJ": "KEL. BARATAJAYA",
+  "Cnt_NAMOBJ": 14,
+  "Ave_gridcode": 1.9
+ },
+ {
+  "OBJECTID": 26,
+  "NAMOBJ": "KEL. BEBEKAN",
+  "Cnt_NAMOBJ": 2,
+  "Ave_gridcode": 1
+ },
+ {
+  "OBJECTID": 27,
+  "NAMOBJ": "KEL. BENDULMERISI",
+  "Cnt_NAMOBJ": 4,
+  "Ave_gridcode": 1.5
+ },
+ {
+  "OBJECTID": 28,
+  "NAMOBJ": "KEL. BIBIS",
+  "Cnt_NAMOBJ": 15,
+  "Ave_gridcode": 1.7
+ },
+ {
+  "OBJECTID": 29,
+  "NAMOBJ": "KEL. BONGKARAN",
+  "Cnt_NAMOBJ": 13,
+  "Ave_gridcode": 1.8
+ },
+ {
+  "OBJECTID": 30,
+  "NAMOBJ": "KEL. BRINGIN",
+  "Cnt_NAMOBJ": 16,
+  "Ave_gridcode": 1.6
+ },
+ {
+  "OBJECTID": 31,
+  "NAMOBJ": "KEL. BUBUTAN",
+  "Cnt_NAMOBJ": 2,
+  "Ave_gridcode": 1
+ },
+ {
+  "OBJECTID": 32,
+  "NAMOBJ": "KEL. BULAK",
+  "Cnt_NAMOBJ": 4,
+  "Ave_gridcode": 1.5
+ },
+ {
+  "OBJECTID": 33,
+  "NAMOBJ": "KEL. BULAKBANTENG",
+  "Cnt_NAMOBJ": 42,
+  "Ave_gridcode": 1.9
+ },
+ {
+  "OBJECTID": 34,
+  "NAMOBJ": "KEL. BUNTARAN",
+  "Cnt_NAMOBJ": 60,
+  "Ave_gridcode": 1.8
+ },
+ {
+  "OBJECTID": 35,
+  "NAMOBJ": "KEL. DARMO",
+  "Cnt_NAMOBJ": 27,
+  "Ave_gridcode": 1.9
+ },
+ {
+  "OBJECTID": 36,
+  "NAMOBJ": "KEL. DR.SUTOMO",
+  "Cnt_NAMOBJ": 14,
+  "Ave_gridcode": 1.8
+ },
+ {
+  "OBJECTID": 37,
+  "NAMOBJ": "KEL. DUKUHKUPANG",
+  "Cnt_NAMOBJ": 4,
+  "Ave_gridcode": 1.3
+ },
+ {
+  "OBJECTID": 38,
+  "NAMOBJ": "KEL. DUKUHMENANGGAL",
+  "Cnt_NAMOBJ": 20,
+  "Ave_gridcode": 1.8
+ },
+ {
+  "OBJECTID": 39,
+  "NAMOBJ": "KEL. DUKUHPAKIS",
+  "Cnt_NAMOBJ": 13,
+  "Ave_gridcode": 1.4
+ },
+ {
+  "OBJECTID": 40,
+  "NAMOBJ": "KEL. DUKUHSUTOREJO",
+  "Cnt_NAMOBJ": 24,
+  "Ave_gridcode": 1.8
+ },
+ {
+  "OBJECTID": 41,
+  "NAMOBJ": "KEL. DUPAK",
+  "Cnt_NAMOBJ": 13,
+  "Ave_gridcode": 1.7
+ },
+ {
+  "OBJECTID": 42,
+  "NAMOBJ": "KEL. EMBONGKALIASIN",
+  "Cnt_NAMOBJ": 16,
+  "Ave_gridcode": 1.7
+ },
+ {
+  "OBJECTID": 43,
+  "NAMOBJ": "KEL. GADEL",
+  "Cnt_NAMOBJ": 8,
+  "Ave_gridcode": 1.5
+ },
+ {
+  "OBJECTID": 44,
+  "NAMOBJ": "KEL. GADING",
+  "Cnt_NAMOBJ": 37,
+  "Ave_gridcode": 1.9
+ },
+ {
+  "OBJECTID": 45,
+  "NAMOBJ": "KEL. GAYUNGAN",
+  "Cnt_NAMOBJ": 21,
+  "Ave_gridcode": 1.8
+ },
+ {
+  "OBJECTID": 46,
+  "NAMOBJ": "KEL. GEBANGPUTIH",
+  "Cnt_NAMOBJ": 23,
+  "Ave_gridcode": 1.7
+ },
+ {
+  "OBJECTID": 47,
+  "NAMOBJ": "KEL. GEDANGASIN",
+  "Cnt_NAMOBJ": 6,
+  "Ave_gridcode": 1.7
+ },
+ {
+  "OBJECTID": 48,
+  "NAMOBJ": "KEL. GENTENG",
+  "Cnt_NAMOBJ": 6,
+  "Ave_gridcode": 1.7
+ },
+ {
+  "OBJECTID": 49,
+  "NAMOBJ": "KEL. GENTING",
+  "Cnt_NAMOBJ": 11,
+  "Ave_gridcode": 1.6
+ },
+ {
+  "OBJECTID": 50,
+  "NAMOBJ": "KEL. GREGES",
+  "Cnt_NAMOBJ": 78,
+  "Ave_gridcode": 1.9
+ },
+ {
+  "OBJECTID": 51,
+  "NAMOBJ": "KEL. GUBENG",
+  "Cnt_NAMOBJ": 12,
+  "Ave_gridcode": 1.7
+ },
+ {
+  "OBJECTID": 52,
+  "NAMOBJ": "KEL. GULOMANTUNG",
+  "Cnt_NAMOBJ": 1,
+  "Ave_gridcode": 0
+ },
+ {
+  "OBJECTID": 53,
+  "NAMOBJ": "KEL. GUNDIH",
+  "Cnt_NAMOBJ": 6,
+  "Ave_gridcode": 1.7
+ },
+ {
+  "OBJECTID": 54,
+  "NAMOBJ": "KEL. GUNUNGANYAR",
+  "Cnt_NAMOBJ": 31,
+  "Ave_gridcode": 1.9
+ },
+ {
+  "OBJECTID": 55,
+  "NAMOBJ": "KEL. GUNUNGANYARTAMBAK",
+  "Cnt_NAMOBJ": 50,
+  "Ave_gridcode": 1.9
+ },
+ {
+  "OBJECTID": 56,
+  "NAMOBJ": "KEL. GUNUNGSARI",
+  "Cnt_NAMOBJ": 19,
+  "Ave_gridcode": 1.5
+ },
+ {
+  "OBJECTID": 57,
+  "NAMOBJ": "KEL. JAGIR",
+  "Cnt_NAMOBJ": 15,
+  "Ave_gridcode": 1.8
+ },
+ {
+  "OBJECTID": 58,
+  "NAMOBJ": "KEL. JAJARTUNGGAL",
+  "Cnt_NAMOBJ": 22,
+  "Ave_gridcode": 1.6
+ },
+ {
+  "OBJECTID": 59,
+  "NAMOBJ": "KEL. JAMBANGAN",
+  "Cnt_NAMOBJ": 14,
+  "Ave_gridcode": 1.9
+ },
+ {
+  "OBJECTID": 60,
+  "NAMOBJ": "KEL. JEMURWONOSARI",
+  "Cnt_NAMOBJ": 25,
+  "Ave_gridcode": 1.9
+ },
+ {
+  "OBJECTID": 61,
+  "NAMOBJ": "KEL. JEPARA",
+  "Cnt_NAMOBJ": 12,
+  "Ave_gridcode": 1.8
+ },
+ {
+  "OBJECTID": 62,
+  "NAMOBJ": "KEL. JERUK",
+  "Cnt_NAMOBJ": 16,
+  "Ave_gridcode": 1.8
+ },
+ {
+  "OBJECTID": 63,
+  "NAMOBJ": "KEL. KALIANAK",
+  "Cnt_NAMOBJ": 12,
+  "Ave_gridcode": 1.7
+ },
+ {
+  "OBJECTID": 64,
+  "NAMOBJ": "KEL. KALIJUDAN",
+  "Cnt_NAMOBJ": 30,
+  "Ave_gridcode": 1.9
+ },
+ {
+  "OBJECTID": 65,
+  "NAMOBJ": "KEL. KALIRUNGKUT",
+  "Cnt_NAMOBJ": 25,
+  "Ave_gridcode": 1.9
+ },
+ {
+  "OBJECTID": 66,
+  "NAMOBJ": "KEL. KALISARI",
+  "Cnt_NAMOBJ": 42,
+  "Ave_gridcode": 1.8
+ },
+ {
+  "OBJECTID": 67,
+  "NAMOBJ": "KEL. KANDANGAN",
+  "Cnt_NAMOBJ": 91,
+  "Ave_gridcode": 1.7
+ },
+ {
+  "OBJECTID": 68,
+  "NAMOBJ": "KEL. KAPASAN",
+  "Cnt_NAMOBJ": 7,
+  "Ave_gridcode": 1.7
+ },
+ {
+  "OBJECTID": 69,
+  "NAMOBJ": "KEL. KAPASARI",
+  "Cnt_NAMOBJ": 5,
+  "Ave_gridcode": 1.6
+ },
+ {
+  "OBJECTID": 70,
+  "NAMOBJ": "KEL. KARAH",
+  "Cnt_NAMOBJ": 15,
+  "Ave_gridcode": 1.8
+ },
+ {
+  "OBJECTID": 71,
+  "NAMOBJ": "KEL. KARANGPILANG",
+  "Cnt_NAMOBJ": 8,
+  "Ave_gridcode": 1.8
+ },
+ {
+  "OBJECTID": 72,
+  "NAMOBJ": "KEL. KARANGPOH",
+  "Cnt_NAMOBJ": 3,
+  "Ave_gridcode": 1.3
+ },
+ {
+  "OBJECTID": 73,
+  "NAMOBJ": "KEL. KEBONSARI",
+  "Cnt_NAMOBJ": 14,
+  "Ave_gridcode": 1.7
+ },
+ {
+  "OBJECTID": 74,
+  "NAMOBJ": "KEL. KEBRAON",
+  "Cnt_NAMOBJ": 38,
+  "Ave_gridcode": 1.9
+ },
+ {
+  "OBJECTID": 75,
+  "NAMOBJ": "KEL. KEDUNGBARUK",
+  "Cnt_NAMOBJ": 14,
+  "Ave_gridcode": 1.6
+ },
+ {
+  "OBJECTID": 76,
+  "NAMOBJ": "KEL. KEDUNGDORO",
+  "Cnt_NAMOBJ": 2,
+  "Ave_gridcode": 1
+ },
+ {
+  "OBJECTID": 77,
+  "NAMOBJ": "KEL. KEDURUS",
+  "Cnt_NAMOBJ": 15,
+  "Ave_gridcode": 1.7
+ },
+ {
+  "OBJECTID": 78,
+  "NAMOBJ": "KEL. KEJAWANPUTIHTAMBAK",
+  "Cnt_NAMOBJ": 30,
+  "Ave_gridcode": 1.9
+ },
+ {
+  "OBJECTID": 79,
+  "NAMOBJ": "KEL. KEMAYORAN",
+  "Cnt_NAMOBJ": 7,
+  "Ave_gridcode": 1.7
+ },
+ {
+  "OBJECTID": 80,
+  "NAMOBJ": "KEL. KENDANGSARI",
+  "Cnt_NAMOBJ": 23,
+  "Ave_gridcode": 1.8
+ },
+ {
+  "OBJECTID": 81,
+  "NAMOBJ": "KEL. KENJERAN",
+  "Cnt_NAMOBJ": 7,
+  "Ave_gridcode": 1.7
+ },
+ {
+  "OBJECTID": 82,
+  "NAMOBJ": "KEL. KEPUTIH",
+  "Cnt_NAMOBJ": 140,
+  "Ave_gridcode": 2
+ },
+ {
+  "OBJECTID": 83,
+  "NAMOBJ": "KEL. KEPUTRAN",
+  "Cnt_NAMOBJ": 17,
+  "Ave_gridcode": 1.8
+ },
+ {
+  "OBJECTID": 84,
+  "NAMOBJ": "KEL. KERTAJAYA",
+  "Cnt_NAMOBJ": 10,
+  "Ave_gridcode": 1.8
+ },
+ {
+  "OBJECTID": 85,
+  "NAMOBJ": "KEL. KETABANG",
+  "Cnt_NAMOBJ": 19,
+  "Ave_gridcode": 1.8
+ },
+ {
+  "OBJECTID": 86,
+  "NAMOBJ": "KEL. KETINTANG",
+  "Cnt_NAMOBJ": 12,
+  "Ave_gridcode": 1.8
+ },
+ {
+  "OBJECTID": 87,
+  "NAMOBJ": "KEL. KLAKAHREJO",
+  "Cnt_NAMOBJ": 12,
+  "Ave_gridcode": 1.8
+ },
+ {
+  "OBJECTID": 88,
+  "NAMOBJ": "KEL. KLAMPISNGASEM",
+  "Cnt_NAMOBJ": 9,
+  "Ave_gridcode": 1.8
+ },
+ {
+  "OBJECTID": 89,
+  "NAMOBJ": "KEL. KOMPLEKKENJERAN",
+  "Cnt_NAMOBJ": 20,
+  "Ave_gridcode": 1.8
+ },
+ {
+  "OBJECTID": 90,
+  "NAMOBJ": "KEL. KREMBANGAN SELATAN",
+  "Cnt_NAMOBJ": 15,
+  "Ave_gridcode": 1.7
+ },
+ {
+  "OBJECTID": 91,
+  "NAMOBJ": "KEL. KREMBANGAN UTARA",
+  "Cnt_NAMOBJ": 4,
+  "Ave_gridcode": 1.3
+ },
+ {
+  "OBJECTID": 92,
+  "NAMOBJ": "KEL. KUPANGKRAJAN",
+  "Cnt_NAMOBJ": 12,
+  "Ave_gridcode": 1.8
+ },
+ {
+  "OBJECTID": 93,
+  "NAMOBJ": "KEL. KUTISARI",
+  "Cnt_NAMOBJ": 10,
+  "Ave_gridcode": 1.7
+ },
+ {
+  "OBJECTID": 94,
+  "NAMOBJ": "KEL. LAKARSANTRI",
+  "Cnt_NAMOBJ": 18,
+  "Ave_gridcode": 1.8
+ },
+ {
+  "OBJECTID": 95,
+  "NAMOBJ": "KEL. LIDAH KULON",
+  "Cnt_NAMOBJ": 23,
+  "Ave_gridcode": 1.6
+ },
+ {
+  "OBJECTID": 96,
+  "NAMOBJ": "KEL. LIDAHWETAN",
+  "Cnt_NAMOBJ": 24,
+  "Ave_gridcode": 1.6
+ },
+ {
+  "OBJECTID": 97,
+  "NAMOBJ": "KEL. LONTAR",
+  "Cnt_NAMOBJ": 29,
+  "Ave_gridcode": 1.4
+ },
+ {
+  "OBJECTID": 98,
+  "NAMOBJ": "KEL. MADE",
+  "Cnt_NAMOBJ": 28,
+  "Ave_gridcode": 1.5
+ },
+ {
+  "OBJECTID": 99,
+  "NAMOBJ": "KEL. MANUKAN KULON",
+  "Cnt_NAMOBJ": 6,
+  "Ave_gridcode": 1.7
+ },
+ {
+  "OBJECTID": 100,
+  "NAMOBJ": "KEL. MANUKAN WETAN",
+  "Cnt_NAMOBJ": 10,
+  "Ave_gridcode": 1.6
+ },
+ {
+  "OBJECTID": 101,
+  "NAMOBJ": "KEL. MARGOREJO",
+  "Cnt_NAMOBJ": 9,
+  "Ave_gridcode": 1.7
+ },
+ {
+  "OBJECTID": 102,
+  "NAMOBJ": "KEL. MAYARSABRANGAN",
+  "Cnt_NAMOBJ": 17,
+  "Ave_gridcode": 1.6
+ },
+ {
+  "OBJECTID": 103,
+  "NAMOBJ": "KEL. MEDOKAN SEMAMPIR",
+  "Cnt_NAMOBJ": 45,
+  "Ave_gridcode": 1.8
+ },
+ {
+  "OBJECTID": 104,
+  "NAMOBJ": "KEL. MEDOKANAYU",
+  "Cnt_NAMOBJ": 77,
+  "Ave_gridcode": 1.9
+ },
+ {
+  "OBJECTID": 105,
+  "NAMOBJ": "KEL. MENANGGAL",
+  "Cnt_NAMOBJ": 12,
+  "Ave_gridcode": 1.8
+ },
+ {
+  "OBJECTID": 106,
+  "NAMOBJ": "KEL. MENURPUMPUNGAN",
+  "Cnt_NAMOBJ": 13,
+  "Ave_gridcode": 1.8
+ },
+ {
+  "OBJECTID": 107,
+  "NAMOBJ": "KEL. MOJO",
+  "Cnt_NAMOBJ": 9,
+  "Ave_gridcode": 1.7
+ },
+ {
+  "OBJECTID": 108,
+  "NAMOBJ": "KEL. MOROKREMBANGAN",
+  "Cnt_NAMOBJ": 46,
+  "Ave_gridcode": 1.7
+ },
+ {
+  "OBJECTID": 109,
+  "NAMOBJ": "KEL. MULYOREJO",
+  "Cnt_NAMOBJ": 46,
+  "Ave_gridcode": 1.7
+ },
+ {
+  "OBJECTID": 110,
+  "NAMOBJ": "KEL. NGAGEL",
+  "Cnt_NAMOBJ": 19,
+  "Ave_gridcode": 1.8
+ },
+ {
+  "OBJECTID": 111,
+  "NAMOBJ": "KEL. NGAGELREJO",
+  "Cnt_NAMOBJ": 17,
+  "Ave_gridcode": 1.8
+ },
+ {
+  "OBJECTID": 112,
+  "NAMOBJ": "KEL. NYAMPLUNGAN",
+  "Cnt_NAMOBJ": 11,
+  "Ave_gridcode": 1.5
+ },
+ {
+  "OBJECTID": 113,
+  "NAMOBJ": "KEL. NYINDENJANGKUNGAN",
+  "Cnt_NAMOBJ": 16,
+  "Ave_gridcode": 1.8
+ },
+ {
+  "OBJECTID": 114,
+  "NAMOBJ": "KEL. PACARKELING",
+  "Cnt_NAMOBJ": 15,
+  "Ave_gridcode": 1.8
+ },
+ {
+  "OBJECTID": 115,
+  "NAMOBJ": "KEL. PACARKEMBANG",
+  "Cnt_NAMOBJ": 23,
+  "Ave_gridcode": 1.9
+ },
+ {
+  "OBJECTID": 116,
+  "NAMOBJ": "KEL. PAGESANGAN",
+  "Cnt_NAMOBJ": 22,
+  "Ave_gridcode": 1.8
+ },
+ {
+  "OBJECTID": 117,
+  "NAMOBJ": "KEL. PAKIS",
+  "Cnt_NAMOBJ": 9,
+  "Ave_gridcode": 1.8
+ },
+ {
+  "OBJECTID": 118,
+  "NAMOBJ": "KEL. PANJANGJIWO",
+  "Cnt_NAMOBJ": 24,
+  "Ave_gridcode": 1.8
+ },
+ {
+  "OBJECTID": 119,
+  "NAMOBJ": "KEL. PEGIRIAN",
+  "Cnt_NAMOBJ": 11,
+  "Ave_gridcode": 1.8
+ },
+ {
+  "OBJECTID": 120,
+  "NAMOBJ": "KEL. PENELEH",
+  "Cnt_NAMOBJ": 15,
+  "Ave_gridcode": 1.9
+ },
+ {
+  "OBJECTID": 121,
+  "NAMOBJ": "KEL. PENJARINGANSARI",
+  "Cnt_NAMOBJ": 12,
+  "Ave_gridcode": 1.8
+ },
+ {
+  "OBJECTID": 122,
+  "NAMOBJ": "KEL. PERAK BARAT",
+  "Cnt_NAMOBJ": 18,
+  "Ave_gridcode": 1.8
+ },
+ {
+  "OBJECTID": 123,
+  "NAMOBJ": "KEL. PERAK TIMUR",
+  "Cnt_NAMOBJ": 6,
+  "Ave_gridcode": 1.7
+ },
+ {
+  "OBJECTID": 124,
+  "NAMOBJ": "KEL. PERAK UTARA",
+  "Cnt_NAMOBJ": 7,
+  "Ave_gridcode": 1.6
+ },
+ {
+  "OBJECTID": 125,
+  "NAMOBJ": "KEL. PETEMON",
+  "Cnt_NAMOBJ": 11,
+  "Ave_gridcode": 1.8
+ },
+ {
+  "OBJECTID": 126,
+  "NAMOBJ": "KEL. PLOSO",
+  "Cnt_NAMOBJ": 14,
+  "Ave_gridcode": 1.9
+ },
+ {
+  "OBJECTID": 127,
+  "NAMOBJ": "KEL. PRADAHKALIKENDAL",
+  "Cnt_NAMOBJ": 11,
+  "Ave_gridcode": 1.3
+ },
+ {
+  "OBJECTID": 128,
+  "NAMOBJ": "KEL. PRAPEN",
+  "Cnt_NAMOBJ": 14,
+  "Ave_gridcode": 1.9
+ },
+ {
+  "OBJECTID": 129,
+  "NAMOBJ": "KEL. PUCANGSEWU",
+  "Cnt_NAMOBJ": 8,
+  "Ave_gridcode": 1.8
+ },
+ {
+  "OBJECTID": 130,
+  "NAMOBJ": "KEL. PUTATGEDE",
+  "Cnt_NAMOBJ": 11,
+  "Ave_gridcode": 1.5
+ },
+ {
+  "OBJECTID": 131,
+  "NAMOBJ": "KEL. PUTATJAYA",
+  "Cnt_NAMOBJ": 5,
+  "Ave_gridcode": 1.6
+ },
+ {
+  "OBJECTID": 132,
+  "NAMOBJ": "KEL. RANGKAH",
+  "Cnt_NAMOBJ": 9,
+  "Ave_gridcode": 1.8
+ },
+ {
+  "OBJECTID": 133,
+  "NAMOBJ": "KEL. ROMOKALISARI",
+  "Cnt_NAMOBJ": 217,
+  "Ave_gridcode": 1.7
+ },
+ {
+  "OBJECTID": 134,
+  "NAMOBJ": "KEL. RUNGKUT KIDUL",
+  "Cnt_NAMOBJ": 16,
+  "Ave_gridcode": 1.8
+ },
+ {
+  "OBJECTID": 135,
+  "NAMOBJ": "KEL. RUNGKUT TENGAH",
+  "Cnt_NAMOBJ": 13,
+  "Ave_gridcode": 1.8
+ },
+ {
+  "OBJECTID": 136,
+  "NAMOBJ": "KEL. RUNGKUTMENANGGAL",
+  "Cnt_NAMOBJ": 19,
+  "Ave_gridcode": 1.8
+ },
+ {
+  "OBJECTID": 137,
+  "NAMOBJ": "KEL. SAMBIKEREP",
+  "Cnt_NAMOBJ": 30,
+  "Ave_gridcode": 1.6
+ },
+ {
+  "OBJECTID": 138,
+  "NAMOBJ": "KEL. SAWAHAN",
+  "Cnt_NAMOBJ": 7,
+  "Ave_gridcode": 1.7
+ },
+ {
+  "OBJECTID": 139,
+  "NAMOBJ": "KEL. SAWUNGGALING",
+  "Cnt_NAMOBJ": 27,
+  "Ave_gridcode": 1.9
+ },
+ {
+  "OBJECTID": 140,
+  "NAMOBJ": "KEL. SEMEMI",
+  "Cnt_NAMOBJ": 110,
+  "Ave_gridcode": 1.7
+ },
+ {
+  "OBJECTID": 141,
+  "NAMOBJ": "KEL. SEMOLOWARU",
+  "Cnt_NAMOBJ": 23,
+  "Ave_gridcode": 1.7
+ },
+ {
+  "OBJECTID": 142,
+  "NAMOBJ": "KEL. SEPANJANG",
+  "Cnt_NAMOBJ": 10,
+  "Ave_gridcode": 1.8
+ },
+ {
+  "OBJECTID": 143,
+  "NAMOBJ": "KEL. SIDODADI",
+  "Cnt_NAMOBJ": 4,
+  "Ave_gridcode": 1.5
+ },
+ {
+  "OBJECTID": 144,
+  "NAMOBJ": "KEL. SIDOSERMO",
+  "Cnt_NAMOBJ": 24,
+  "Ave_gridcode": 1.9
+ },
+ {
+  "OBJECTID": 145,
+  "NAMOBJ": "KEL. SIDOTOPO",
+  "Cnt_NAMOBJ": 8,
+  "Ave_gridcode": 1.8
+ },
+ {
+  "OBJECTID": 146,
+  "NAMOBJ": "KEL. SIDOTOPO WETAN",
+  "Cnt_NAMOBJ": 14,
+  "Ave_gridcode": 1.9
+ },
+ {
+  "OBJECTID": 147,
+  "NAMOBJ": "KEL. SIMOKERTO",
+  "Cnt_NAMOBJ": 15,
+  "Ave_gridcode": 1.9
+ },
+ {
+  "OBJECTID": 148,
+  "NAMOBJ": "KEL. SIMOLAWANG",
+  "Cnt_NAMOBJ": 7,
+  "Ave_gridcode": 1.7
+ },
+ {
+  "OBJECTID": 149,
+  "NAMOBJ": "KEL. SIMOMULYO",
+  "Cnt_NAMOBJ": 27,
+  "Ave_gridcode": 1.9
+ },
+ {
+  "OBJECTID": 150,
+  "NAMOBJ": "KEL. SIWALANKERTO",
+  "Cnt_NAMOBJ": 7,
+  "Ave_gridcode": 1.6
+ },
+ {
+  "OBJECTID": 151,
+  "NAMOBJ": "KEL. SONOKWIJENAN",
+  "Cnt_NAMOBJ": 10,
+  "Ave_gridcode": 1.4
+ },
+ {
+  "OBJECTID": 152,
+  "NAMOBJ": "KEL. SUKOLILO",
+  "Cnt_NAMOBJ": 14,
+  "Ave_gridcode": 1.7
+ },
+ {
+  "OBJECTID": 153,
+  "NAMOBJ": "KEL. SUKOMANUNGGAL",
+  "Cnt_NAMOBJ": 17,
+  "Ave_gridcode": 1.8
+ },
+ {
+  "OBJECTID": 154,
+  "NAMOBJ": "KEL. SUMURWELUT",
+  "Cnt_NAMOBJ": 7,
+  "Ave_gridcode": 1.7
+ },
+ {
+  "OBJECTID": 155,
+  "NAMOBJ": "KEL. TAMBAKLANGON",
+  "Cnt_NAMOBJ": 84,
+  "Ave_gridcode": 1.8
+ },
+ {
+  "OBJECTID": 156,
+  "NAMOBJ": "KEL. TAMBAKOSOWILANGON",
+  "Cnt_NAMOBJ": 240,
+  "Ave_gridcode": 1.8
+ },
+ {
+  "OBJECTID": 157,
+  "NAMOBJ": "KEL. TAMBAKREJO",
+  "Cnt_NAMOBJ": 4,
+  "Ave_gridcode": 1.5
+ },
+ {
+  "OBJECTID": 158,
+  "NAMOBJ": "KEL. TAMBAKSARI",
+  "Cnt_NAMOBJ": 1,
+  "Ave_gridcode": 0
+ },
+ {
+  "OBJECTID": 159,
+  "NAMOBJ": "KEL. TAMBAKWEDI",
+  "Cnt_NAMOBJ": 19,
+  "Ave_gridcode": 2.1
+ },
+ {
+  "OBJECTID": 160,
+  "NAMOBJ": "KEL. TANAHKALIKEDINDING",
+  "Cnt_NAMOBJ": 17,
+  "Ave_gridcode": 1.9
+ },
+ {
+  "OBJECTID": 161,
+  "NAMOBJ": "KEL. TANDES KIDUL",
+  "Cnt_NAMOBJ": 6,
+  "Ave_gridcode": 1.7
+ },
+ {
+  "OBJECTID": 162,
+  "NAMOBJ": "KEL. TANDES LOR",
+  "Cnt_NAMOBJ": 8,
+  "Ave_gridcode": 1.6
+ },
+ {
+  "OBJECTID": 163,
+  "NAMOBJ": "KEL. TANJUNGSARI",
+  "Cnt_NAMOBJ": 17,
+  "Ave_gridcode": 1.7
+ },
+ {
+  "OBJECTID": 164,
+  "NAMOBJ": "KEL. TEGALSARI",
+  "Cnt_NAMOBJ": 4,
+  "Ave_gridcode": 1.5
+ },
+ {
+  "OBJECTID": 165,
+  "NAMOBJ": "KEL. TEMBOKDUKUH",
+  "Cnt_NAMOBJ": 6,
+  "Ave_gridcode": 1.7
+ },
+ {
+  "OBJECTID": 166,
+  "NAMOBJ": "KEL. TENGGILISMEJOYO",
+  "Cnt_NAMOBJ": 27,
+  "Ave_gridcode": 1.9
+ },
+ {
+  "OBJECTID": 167,
+  "NAMOBJ": "KEL. TUBANAN",
+  "Cnt_NAMOBJ": 1,
+  "Ave_gridcode": 0
+ },
+ {
+  "OBJECTID": 168,
+  "NAMOBJ": "KEL. UJUNG",
+  "Cnt_NAMOBJ": 50,
+  "Ave_gridcode": 1.9
+ },
+ {
+  "OBJECTID": 169,
+  "NAMOBJ": "KEL. WARUNGGUNUNG",
+  "Cnt_NAMOBJ": 5,
+  "Ave_gridcode": 1.6
+ },
+ {
+  "OBJECTID": 170,
+  "NAMOBJ": "KEL. WIYUNG",
+  "Cnt_NAMOBJ": 29,
+  "Ave_gridcode": 1.7
+ },
+ {
+  "OBJECTID": 171,
+  "NAMOBJ": "KEL. WONOCOLO",
+  "Cnt_NAMOBJ": 1,
+  "Ave_gridcode": 0
+ },
+ {
+  "OBJECTID": 172,
+  "NAMOBJ": "KEL. WONOKROMO",
+  "Cnt_NAMOBJ": 13,
+  "Ave_gridcode": 1.8
+ },
+ {
+  "OBJECTID": 173,
+  "NAMOBJ": "KEL. WONOKUSUMO",
+  "Cnt_NAMOBJ": 16,
+  "Ave_gridcode": 1.8
+ },
+ {
+  "OBJECTID": 174,
+  "NAMOBJ": "KEL. WONOREJO",
+  "Cnt_NAMOBJ": 100,
+  "Ave_gridcode": 1.9
+ },
+ {
+  "OBJECTID": 175,
+  "NAMOBJ": "KEPATIHAN",
+  "Cnt_NAMOBJ": 4,
+  "Ave_gridcode": 1.5
+ },
+ {
+  "OBJECTID": 176,
+  "NAMOBJ": "KREMBANGAN",
+  "Cnt_NAMOBJ": 3,
+  "Ave_gridcode": 1.3
+ },
+ {
+  "OBJECTID": 177,
+  "NAMOBJ": "LABAN",
+  "Cnt_NAMOBJ": 3,
+  "Ave_gridcode": 1.3
+ },
+ {
+  "OBJECTID": 178,
+  "NAMOBJ": "MULUNG",
+  "Cnt_NAMOBJ": 2,
+  "Ave_gridcode": 1
+ },
+ {
+  "OBJECTID": 179,
+  "NAMOBJ": "NGELOM",
+  "Cnt_NAMOBJ": 6,
+  "Ave_gridcode": 1.7
+ },
+ {
+  "OBJECTID": 180,
+  "NAMOBJ": "PAKAL",
+  "Cnt_NAMOBJ": 76,
+  "Ave_gridcode": 1.7
+ },
+ {
+  "OBJECTID": 181,
+  "NAMOBJ": "PENGALANGAN",
+  "Cnt_NAMOBJ": 4,
+  "Ave_gridcode": 0.8
+ },
+ {
+  "OBJECTID": 182,
+  "NAMOBJ": "PENJARINGANSARI",
+  "Cnt_NAMOBJ": 2,
+  "Ave_gridcode": 1
+ },
+ {
+  "OBJECTID": 183,
+  "NAMOBJ": "PERAK BARAT",
+  "Cnt_NAMOBJ": 3,
+  "Ave_gridcode": 0
+ },
+ {
+  "OBJECTID": 184,
+  "NAMOBJ": "PRAMBANGAN",
+  "Cnt_NAMOBJ": 10,
+  "Ave_gridcode": 1.8
+ },
+ {
+  "OBJECTID": 185,
+  "NAMOBJ": "RANDEGANSARI",
+  "Cnt_NAMOBJ": 5,
+  "Ave_gridcode": 1.6
+ },
+ {
+  "OBJECTID": 186,
+  "NAMOBJ": "SEGOROMADU",
+  "Cnt_NAMOBJ": 7,
+  "Ave_gridcode": 1.7
+ },
+ {
+  "OBJECTID": 187,
+  "NAMOBJ": "SETRO",
+  "Cnt_NAMOBJ": 1,
+  "Ave_gridcode": 0
+ },
+ {
+  "OBJECTID": 188,
+  "NAMOBJ": "SUKOREJO",
+  "Cnt_NAMOBJ": 3,
+  "Ave_gridcode": 1.3
+ },
+ {
+  "OBJECTID": 189,
+  "NAMOBJ": "SUMBEREJO",
+  "Cnt_NAMOBJ": 82,
+  "Ave_gridcode": 1.8
+ },
+ {
+  "OBJECTID": 190,
+  "NAMOBJ": "TAMBAKBERAS",
+  "Cnt_NAMOBJ": 9,
+  "Ave_gridcode": 1.8
+ },
+ {
+  "OBJECTID": 191,
+  "NAMOBJ": "TAMBAKDONO",
+  "Cnt_NAMOBJ": 74,
+  "Ave_gridcode": 1.8
+ },
+ {
+  "OBJECTID": 192,
+  "NAMOBJ": "TAMBAKOSO",
+  "Cnt_NAMOBJ": 15,
+  "Ave_gridcode": 1.9
+ },
+ {
+  "OBJECTID": 193,
+  "NAMOBJ": "TAMBAKREJO",
+  "Cnt_NAMOBJ": 2,
+  "Ave_gridcode": 1
+ },
+ {
+  "OBJECTID": 194,
+  "NAMOBJ": "TAMBAKSUMUR",
+  "Cnt_NAMOBJ": 9,
+  "Ave_gridcode": 1.8
+ },
+ {
+  "OBJECTID": 195,
+  "NAMOBJ": "TAWANGSARI",
+  "Cnt_NAMOBJ": 6,
+  "Ave_gridcode": 1.7
+ },
+ {
+  "OBJECTID": 196,
+  "NAMOBJ": "WADUNGASRI",
+  "Cnt_NAMOBJ": 5,
+  "Ave_gridcode": 1.6
+ },
+ {
+  "OBJECTID": 197,
+  "NAMOBJ": "WEDORO",
+  "Cnt_NAMOBJ": 2,
+  "Ave_gridcode": 1
+ }
+]
