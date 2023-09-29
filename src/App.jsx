@@ -21,6 +21,7 @@ function App() {
         <Route path="/tentang" element={<MyTentang />} />
         <Route path="/laporkan" element={<MyLaporkan />} />
         <Route path="/laporan" element={<MyLaporan />} />
+        <Route path="/laporan/:id" element={<MyLaporan />} />
       </Routes>
     </>
   );

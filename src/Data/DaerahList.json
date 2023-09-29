@@ -1,7 +1,7 @@
 [
-  { "id": 1, "name": "BAMBE", "link": "" },
-  { "id": 2, "name": "BENOWO", "link": "" },
-  { "id": 3, "name": "BERBEK", "link": "" },
+  { "id": 1, "name": "BAMBE", "link": "/laporan/1" },
+  { "id": 2, "name": "BENOWO", "link": "/laporan/2" },
+  { "id": 3, "name": "BERBEK", "link": "/laporan/3" },
   { "id": 4, "name": "BUNGURASIH", "link": "" },
   { "id": 5, "name": "GADUNG", "link": "" },
   { "id": 6, "name": "GEMPOLKURUNG", "link": "" },

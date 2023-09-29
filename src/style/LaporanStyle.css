@@ -18,7 +18,7 @@
 }
 .search-bar .title {
   width: 45.5%;
-  margin-bottom: 6rem;
+  margin-bottom: 8rem;
 }
 .input {
   width: 54.5%;
@@ -70,7 +70,6 @@
 .chart {
   width: 520px;
   border-radius: 6px;
-  border: aqua 1px solid;
   height: 38vh;
   display: flex;
   padding: 5px;

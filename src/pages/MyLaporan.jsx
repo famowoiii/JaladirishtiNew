@@ -1,15 +1,28 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { BiUserCircle } from "react-icons/bi";
 import "../style/LaporanStyle.css";
 import MapPreview from "../components/MapPreview";
 import daerahList from "../Data/DaerahList.json";
 import { AiOutlineSend } from "react-icons/ai";
 import ReactApexChart from "react-apexcharts";
-import chartData from "../Data/chartData.json";
+import chartData from "../Data/chartDataBanjir.json";
+import { Link, useParams } from "react-router-dom";
 
 const MyLaporan = () => {
   const [searchTerm, setSearchTerm] = useState("");
   const [filteredDaerah, setFilteredDaerah] = useState([]);
+  const [currentChartData, setCurrentChartData] = useState(null);
+  const { id } = useParams();
+
+  useEffect(() => {
+    const data = chartData.find((data) => parseInt(data.id) === parseInt(id));
+
+    if (data) {
+      setCurrentChartData(data);
+    } else {
+      setCurrentChartData(chartData.find((data) => data.id === "2"));
+    }
+  }, [id]);
 
   const handleSearch = (event) => {
     const searchValue = event.target.value;
@@ -27,6 +40,54 @@ const MyLaporan = () => {
       .slice(0, 3);
 
     setFilteredDaerah(results);
+  };
+
+  const increaseVote = () => {
+    if (window.confirm("Apakah Anda yakin daerah ini masih terjadi banjir?")) {
+      // Kode untuk menambah vote...
+      if (currentChartData) {
+        const today = new Date().toISOString().split("T")[0];
+        const index = currentChartData.data.dates.findIndex(
+          (date) => date === today
+        );
+
+        if (index !== -1) {
+          const updatedVotes = [...currentChartData.data.votes];
+          updatedVotes[index]++;
+          setCurrentChartData({
+            ...currentChartData,
+            data: {
+              ...currentChartData.data,
+              votes: updatedVotes,
+            },
+          });
+        }
+      }
+    }
+  };
+
+  const decreaseVote = () => {
+    if (window.confirm("Apakah Anda yakin daerah ini tidak terjadi banjir?")) {
+      // Kode untuk mengurangi vote...
+      if (currentChartData) {
+        const today = new Date().toISOString().split("T")[0];
+        const index = currentChartData.data.dates.findIndex(
+          (date) => date === today
+        );
+
+        if (index !== -1) {
+          const updatedVotes = [...currentChartData.data.votes];
+          updatedVotes[index]--;
+          setCurrentChartData({
+            ...currentChartData,
+            data: {
+              ...currentChartData.data,
+              votes: updatedVotes,
+            },
+          });
+        }
+      }
+    }
   };
 
   const chartOptions = {
@@ -51,7 +112,7 @@ const MyLaporan = () => {
       text: "Perhitungan Laporan",
       align: "left",
     },
-    labels: chartData.monthDataSeries1.dates,
+    labels: currentChartData ? currentChartData.data.dates : [],
     xaxis: {
       type: "datetime",
     },
@@ -63,20 +124,13 @@ const MyLaporan = () => {
     },
   };
 
-  const chartSeries = [
-    {
-      name: "STOCK ABC",
-      data: chartData.monthDataSeries1.prices,
-    },
-  ];
-
   return (
     <div>
       <div className="navbar"></div>
       <div className="laporan-wrapper">
         <div className="search-bar">
           <div className="title">
-            <h1>Laporan Kelurahan </h1>
+            <h1>Laporan Banjir</h1>
           </div>
           <div className="input">
             <input
@@ -89,7 +143,7 @@ const MyLaporan = () => {
             <div className="search-results">
               {filteredDaerah.map((daerah) => (
                 <div key={daerah.id}>
-                  <a href={daerah.link}>{daerah.name}</a>
+                  <Link to={daerah.link}>{daerah.name}</Link>
                 </div>
               ))}
             </div>
@@ -121,15 +175,15 @@ const MyLaporan = () => {
               <div className="riwayat-laporan">
                 <div className="riwayat-laporan-1">
                   <BiUserCircle className="user-logo" size={40} />
-                  <span>{"User 1"}</span>
+                  <span>User 1</span>
                 </div>
                 <div className="riwayat-laporan-2">
                   <BiUserCircle className="user-logo" size={40} />
-                  <span>{"User 2"}</span>
+                  <span>User 2</span>
                 </div>
                 <div className="riwayat-laporan-3">
                   <BiUserCircle className="user-logo" size={40} />
-                  <span>{"User 3"}</span>
+                  <span>User 3</span>
                 </div>
               </div>
             </div>
@@ -139,7 +193,16 @@ const MyLaporan = () => {
               <div className="chart-laporan">
                 <ReactApexChart
                   options={chartOptions}
-                  series={chartSeries}
+                  series={
+                    currentChartData
+                      ? [
+                          {
+                            name: "LAPORAN",
+                            data: currentChartData.data.votes,
+                          },
+                        ]
+                      : []
+                  }
                   type="area"
                   height={350}
                 />
@@ -147,9 +210,12 @@ const MyLaporan = () => {
             </div>
             <div className="konfirmasi">
               <h2>Laporkan Kondisi Saat Ini</h2>
-              <button className="masih">Daerah ini masih terjadi banjir</button>
-              <button className="tidak">Daerah ini tidak terjadi banjir</button>
-              <button className="surut">Banjir Sudah Mulai Surut</button>
+              <button className="masih" onClick={increaseVote}>
+                Daerah ini masih terjadi banjir
+              </button>
+              <button className="tidak" onClick={decreaseVote}>
+                Daerah ini tidak terjadi banjir
+              </button>
             </div>
           </div>
         </div>
