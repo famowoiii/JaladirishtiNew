@@ -64,14 +64,14 @@
 .chart .chart-laporan {
   background-color: white;
   margin: 8px;
-  height: 200px;
+  height: 50vh;
   border-radius: 5px;
 }
 .chart {
   width: 520px;
   border-radius: 6px;
   border: aqua 1px solid;
-  height: 275px;
+  height: 38vh;
   display: flex;
   padding: 5px;
   justify-content: center;
@@ -214,4 +214,13 @@
 .search-results div {
   cursor: pointer;
   margin-top: 1vh;
+}
+
+.chart-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 350px; /* Anda dapat mengatur sesuai kebutuhan */
+  margin-bottom: 20px;
 }

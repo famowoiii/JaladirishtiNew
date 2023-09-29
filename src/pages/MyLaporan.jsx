@@ -4,6 +4,8 @@ import "../style/LaporanStyle.css";
 import MapPreview from "../components/MapPreview";
 import daerahList from "../Data/DaerahList.json";
 import { AiOutlineSend } from "react-icons/ai";
+import ReactApexChart from "react-apexcharts";
+import chartData from "../Data/chartData.json";
 
 const MyLaporan = () => {
   const [searchTerm, setSearchTerm] = useState("");
@@ -26,6 +28,47 @@ const MyLaporan = () => {
 
     setFilteredDaerah(results);
   };
+
+  const chartOptions = {
+    chart: {
+      type: "area",
+      height: 350,
+      zoom: {
+        enabled: false,
+      },
+    },
+    dataLabels: {
+      enabled: false,
+    },
+    stroke: {
+      curve: "straight",
+    },
+    title: {
+      text: "Grafik Laporan Banjir",
+      align: "left",
+    },
+    subtitle: {
+      text: "Perhitungan Laporan",
+      align: "left",
+    },
+    labels: chartData.monthDataSeries1.dates,
+    xaxis: {
+      type: "datetime",
+    },
+    yaxis: {
+      opposite: true,
+    },
+    legend: {
+      horizontalAlign: "left",
+    },
+  };
+
+  const chartSeries = [
+    {
+      name: "STOCK ABC",
+      data: chartData.monthDataSeries1.prices,
+    },
+  ];
 
   return (
     <div>
@@ -94,13 +137,12 @@ const MyLaporan = () => {
           <div className="kanan">
             <div className="chart">
               <div className="chart-laporan">
-                ini adalah grafik, kayanya harus pake API chart ya
-              </div>
-              <div className="laporan-kelurahan">
-                `${"laporan per-"}Kelurahan`
-              </div>
-              <div className="laporan-keseluruhan">
-                `${"laporan"} keseluruhan`
+                <ReactApexChart
+                  options={chartOptions}
+                  series={chartSeries}
+                  type="area"
+                  height={350}
+                />
               </div>
             </div>
             <div className="konfirmasi">
