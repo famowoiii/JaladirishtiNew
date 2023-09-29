@@ -1,12 +1,32 @@
-import React from "react";
-import { useState } from "react";
-import { useEffect } from "react";
+import React, { useState } from "react";
 import { BiUserCircle } from "react-icons/bi";
 import "../style/LaporanStyle.css";
 import MapPreview from "../components/MapPreview";
-
+import daerahList from "../Data/DaerahList.json";
 import { AiOutlineSend } from "react-icons/ai";
+
 const MyLaporan = () => {
+  const [searchTerm, setSearchTerm] = useState("");
+  const [filteredDaerah, setFilteredDaerah] = useState([]);
+
+  const handleSearch = (event) => {
+    const searchValue = event.target.value;
+    setSearchTerm(searchValue);
+
+    if (!searchValue) {
+      setFilteredDaerah([]);
+      return;
+    }
+
+    const results = daerahList
+      .filter((daerah) =>
+        daerah.name.toLowerCase().includes(searchValue.toLowerCase())
+      )
+      .slice(0, 3);
+
+    setFilteredDaerah(results);
+  };
+
   return (
     <div>
       <div className="navbar"></div>
@@ -16,8 +36,20 @@ const MyLaporan = () => {
             <h1>Laporan Kelurahan </h1>
           </div>
           <div className="input">
-            <input type="text" placeholder="Cari Derahmu" />
+            <input
+              type="text"
+              placeholder="Cari Derahmu"
+              value={searchTerm}
+              onChange={handleSearch}
+            />
             <button>Cari</button>
+            <div className="search-results">
+              {filteredDaerah.map((daerah) => (
+                <div key={daerah.id}>
+                  <a href={daerah.link}>{daerah.name}</a>
+                </div>
+              ))}
+            </div>
           </div>
         </div>
         <div className="content">
@@ -31,8 +63,7 @@ const MyLaporan = () => {
                   type="text"
                   name=""
                   id=""
-                  placeholder="
-            Tambah Komentar...."
+                  placeholder="Tambah Komentar...."
                   className="input-komentar"
                 />
                 <button className="kirim">
@@ -46,15 +77,15 @@ const MyLaporan = () => {
             <div className="komentar">
               <div className="riwayat-laporan">
                 <div className="riwayat-laporan-1">
-                  <BiUserCircle className="user-logo" size={40} />{" "}
+                  <BiUserCircle className="user-logo" size={40} />
                   <span>{"User 1"}</span>
                 </div>
                 <div className="riwayat-laporan-2">
-                  <BiUserCircle className="user-logo" size={40} />{" "}
+                  <BiUserCircle className="user-logo" size={40} />
                   <span>{"User 2"}</span>
                 </div>
                 <div className="riwayat-laporan-3">
-                  <BiUserCircle className="user-logo" size={40} />{" "}
+                  <BiUserCircle className="user-logo" size={40} />
                   <span>{"User 3"}</span>
                 </div>
               </div>
@@ -63,9 +94,8 @@ const MyLaporan = () => {
           <div className="kanan">
             <div className="chart">
               <div className="chart-laporan">
-                ini adalah grafik, kayanya haris pake API chart fa
+                ini adalah grafik, kayanya harus pake API chart ya
               </div>
-
               <div className="laporan-kelurahan">
                 `${"laporan per-"}Kelurahan`
               </div>

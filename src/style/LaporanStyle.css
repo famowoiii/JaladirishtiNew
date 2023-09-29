@@ -18,6 +18,7 @@
 }
 .search-bar .title {
   width: 45.5%;
+  margin-bottom: 6rem;
 }
 .input {
   width: 54.5%;
@@ -194,4 +195,23 @@
 }
 .komentar-title {
   transform: translateY(-2rem);
+}
+
+.search-bar {
+  display: flex;
+  width: 100%;
+  gap: 10px; /* Jarak antara input dan tombol, Anda bisa menyesuaikannya */
+}
+
+.search-bar input {
+  flex: 1; /* Menggunakan seluruh ruang yang tersedia */
+}
+
+.search-results {
+  overflow-y: auto; /* Tampilkan scrollbar jika ada banyak item */
+}
+
+.search-results div {
+  cursor: pointer;
+  margin-top: 1vh;
 }

@@ -1,9 +1,10 @@
 .laporkan-page .background {
-  background-image: url(src/assets/relawan-banjir.jpeg);
+  background-image: url(src/assets/relawan-banjir.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   justify-content: center;
-  min-height: 40vh;
+  width: 100vw; /* lebar 100% dari lebar viewport */
+  height: 120vh; /* tinggi 100% dari tinggi viewport */
 }
 
 .laporkan-page {
@@ -42,9 +43,20 @@
   gap: 10px;
 }
 
-.extend {
-  background-color: antiquewhite;
-  height: 60vh;
+.laporan-section a {
+  text-decoration: none; /* Menghilangkan garis bawah pada link */
+  color: black; /* Mengatur warna teks menjadi hitam atau warna lain yang Anda inginkan */
+}
+
+.kiri {
+  display: flex;
+  flex-direction: column; /* Agar kontennya disusun secara vertikal */
+  width: 100%; /* Menggunakan seluruh lebar yang tersedia */
+}
+
+.search-results a {
+  text-decoration: none; /* Menghilangkan garis bawah pada link */
+  color: inherit; /* Pewarisan warna dari elemen induk */
 }
 
 @media screen and (min-width: 320px) and (max-width: 1024px) {

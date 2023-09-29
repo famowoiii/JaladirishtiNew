@@ -85,7 +85,7 @@ const MyBeranda = (props) => {
     }
   };
 
-  const [Active, setActive] = useState(null);
+  const [Active, setActive] = useState("Step1");
 
   const handleButton = (step) => {
     setActive(step);
@@ -100,7 +100,7 @@ const MyBeranda = (props) => {
     setSearchTerm(searchValue);
 
     if (!searchValue) {
-      setFilteredDaerah([]); // Kosongkan daftar jika input kosong
+      setFilteredDaerah([]); // buat ngilangin result kalo searchnya kosong
       return;
     }
 
@@ -109,7 +109,7 @@ const MyBeranda = (props) => {
       .filter((daerah) =>
         daerah.name.toLowerCase().includes(searchValue.toLowerCase())
       )
-      .slice(0, 5); // Memotong hasil agar hanya menampilkan 5 pertama
+      .slice(0, 5); // keluar top 5 result aja
 
     setFilteredDaerah(results);
   };

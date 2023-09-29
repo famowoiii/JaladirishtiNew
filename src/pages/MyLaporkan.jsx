@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import "../style/LaporkanStyle.css";
 import { BsFillExclamationTriangleFill } from "react-icons/bs";
 import { createClient } from "@supabase/supabase-js";
+import daerahList from "../Data/DaerahList.json";
 
 const MyLaporkan = () => {
   const apikey =
@@ -51,6 +52,28 @@ const MyLaporkan = () => {
     }
   };
 
+  const [searchTerm, setSearchTerm] = useState("");
+  const [filteredDaerah, setFilteredDaerah] = useState([]);
+
+  const handleSearch = (event) => {
+    const searchValue = event.target.value;
+    setSearchTerm(searchValue);
+
+    if (!searchValue) {
+      setFilteredDaerah([]); // buat ngilangin result kalo searchnya kosong
+      return;
+    }
+
+    // Filter daerah berdasarkan input
+    const results = daerahList
+      .filter((daerah) =>
+        daerah.name.toLowerCase().includes(searchValue.toLowerCase())
+      )
+      .slice(0, 5); // keluar top 5 result aja
+
+    setFilteredDaerah(results);
+  };
+
   return (
     <div className="laporkan-page">
       <section className="background-navbar"></section>
@@ -69,6 +92,33 @@ const MyLaporkan = () => {
           <button className="button-laporkan" onClick={handleLaporkanClick}>
             LAPORKAN
           </button>
+
+          <div>
+            <br />
+            Lokasi anda bermasalah?
+          </div>
+
+          <div className="kiri">
+            <div className="search-container">
+              <div className="search-bar">
+                <input
+                  type="text"
+                  value={searchTerm}
+                  onChange={handleSearch}
+                  placeholder="Cari Daerahmu!"
+                />
+                <button id="button-search">Cari</button>
+              </div>
+
+              <div className="laporan-section">
+                {filteredDaerah.map((daerah) => (
+                  <div key={daerah.id} className={`laporan-${daerah.id}`}>
+                    <a href={daerah.link}>{daerah.name}</a>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
         </div>
       </section>
       <section className="extend"></section>
