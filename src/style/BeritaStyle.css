@@ -39,7 +39,7 @@
 
 .berita-side .berita-populer {
   box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
-  border-radius: 7px;
+  border-radius: 1vw;
 }
 
 .berita-side .berita-populer div {
@@ -86,4 +86,8 @@
   border-radius: 6px;
   object-fit: cover; /* Ini akan memastikan gambar selalu terlihat bagus di dalam kartu */
   height: 60%; /* Menyesuaikan tinggi gambar dengan kartu */
+}
+
+.date {
+  font-size: small;
 }

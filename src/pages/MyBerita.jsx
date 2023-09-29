@@ -14,8 +14,9 @@ const MyBerita = () => {
         <div className="card-wrapper">
           {data.map((item) => (
             <div key={item.id} className="card-berita">
-              <img src={item.download_url} alt={item.author} />
+              <img src={item.download_url} alt={item.title} />
               <div className="keterangan">
+                <h3 className="title">{item.title}</h3>
                 <p className="deskripsi">{item.author}</p>
                 <a
                   className="link-berita"
@@ -25,7 +26,7 @@ const MyBerita = () => {
                 >
                   Tautan
                 </a>
-                <p className="date">--ini tanggal--</p>
+                <p className="date">{item.date}</p>
               </div>
             </div>
           ))}
@@ -36,8 +37,9 @@ const MyBerita = () => {
         <div className="berita-populer">
           {data.slice(0, 3).map((item) => (
             <div key={item.id}>
-              <img src={item.download_url} alt={item.author} />
-              <div className="deskripsi">{item.author}</div>
+              <img src={item.download_url} alt={item.title} />
+              <h4 className="title">{item.title}</h4>
+              <p className="date">{item.date}</p>
             </div>
           ))}
         </div>
