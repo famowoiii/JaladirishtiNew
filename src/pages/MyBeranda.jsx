@@ -100,7 +100,7 @@ const MyBeranda = (props) => {
     setSearchTerm(searchValue);
 
     if (!searchValue) {
-      setFilteredDaerah([]); // buat ngilangin result kalo searchnya kosong
+      setFilteredDaerah([]); // buat ngilangin result kalo searchnya
       return;
     }
 
@@ -117,20 +117,6 @@ const MyBeranda = (props) => {
   return (
     <div>
       {/* Modal */}
-      <Modal show={showModal} onHide={handleCloseModal} size="lg">
-        <Modal.Header closeButton>
-          <Modal.Title>Large Modal</Modal.Title>
-        </Modal.Header>
-        <Modal.Body>
-          {/* Isi konten modal di sini */}
-          <Button variant="danger">Daerah ini masih terjadi banjir</Button>
-          <Button variant="primary">Daerah ini Sudah Tidak Banjir</Button>
-          <Button variant="secondary" onClick={handleCloseModal}>
-            Close
-          </Button>
-        </Modal.Body>
-        <Modal.Footer></Modal.Footer>
-      </Modal>
       {/* Section-1 Start */}
       <section className="section-1">
         <div className="section-1-text">
@@ -287,17 +273,6 @@ const MyBeranda = (props) => {
           ></path>
         </svg>
       </section>
-
-      {/* section-6*/}
-      <section className="section-6">
-        <div className="section-6-wrapper">
-          <div className="section-6-text">Berita Banjir di Surabaya</div>
-          <div>
-            <BeritaSlider deviceType={props.deviceType} />
-          </div>
-        </div>
-      </section>
-
       {/* section-7*/}
       <section className="section-7">
         <div className="section-7-wrapper">
@@ -353,10 +328,12 @@ const MyBeranda = (props) => {
           <div className="footer-title">
             <h4>Jaladirishti</h4>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat
-              earum sed doloremque blanditiis! Architecto nesciunt minus ex
-              incidunt, minima perferendis neque atque provident, aut error
-              repellat voluptates sint dolor ea.
+              Kami berkomitmen untuk terus meningkatkan layanan kami guna
+              memberikan informasi yang lebih baik dan membantu masyarakat
+              Surabaya dalam menghadapi tantangan banjir. Terima kasih telah
+              menggunakan situs kami. Jika Anda memiliki pertanyaan, saran, atau
+              masukan, jangan ragu untuk menghubungi tim kami. Bersama-sama,
+              kita dapat menjadikan Kota Surabaya lebih tahan terhadap banjir.
             </p>
           </div>
           <div className="footer-menu">

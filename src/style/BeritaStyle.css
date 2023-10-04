@@ -69,7 +69,7 @@
   padding: 8px;
   width: 30%; /* Menentukan lebar kartu */
   box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
-  height: 30vh; /* Tinggi kartu */
+  height: 35vh; /* Tinggi kartu */
   justify-content: center;
 }
 

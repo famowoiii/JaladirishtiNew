@@ -54,6 +54,11 @@ li .link {
     box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
   }
 
+  li .link {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+  }
+
   .navbar-menu.active {
     display: flex;
     position: absolute;

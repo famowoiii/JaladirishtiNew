@@ -7,86 +7,78 @@ import { AiOutlineSend } from "react-icons/ai";
 import ReactApexChart from "react-apexcharts";
 import chartData from "../Data/chartDataBanjir.json";
 import { Link, useParams } from "react-router-dom";
+import { createClient } from "@supabase/supabase-js";
+
+const supabaseUrl = "https://tjxcepornohvxfqygmiq.supabase.co";
+const supabaseApiKey =
+  "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InRqeGNlcG9ybm9odnhmcXlnbWlxIiwicm9sZSI6ImFub24iLCJpYXQiOjE2OTU2NTYwNjYsImV4cCI6MjAxMTIzMjA2Nn0.5Vgf8SPA2gb78BOXJhAUcqal-hGPuGDmKUG8zXwTZBw";
 
 const MyLaporan = () => {
   const [searchTerm, setSearchTerm] = useState("");
   const [filteredDaerah, setFilteredDaerah] = useState([]);
   const [currentChartData, setCurrentChartData] = useState(null);
+  const [komentarValue, setKomentarValue] = useState("");
+  const [komentarData, setKomentarData] = useState([]);
   const { id } = useParams();
 
   useEffect(() => {
     const data = chartData.find((data) => parseInt(data.id) === parseInt(id));
-
     if (data) {
       setCurrentChartData(data);
     } else {
       setCurrentChartData(chartData.find((data) => data.id === "2"));
     }
+    fetchKomentarData();
   }, [id]);
 
   const handleSearch = (event) => {
     const searchValue = event.target.value;
     setSearchTerm(searchValue);
-
     if (!searchValue) {
       setFilteredDaerah([]);
       return;
     }
-
     const results = daerahList
       .filter((daerah) =>
         daerah.name.toLowerCase().includes(searchValue.toLowerCase())
       )
       .slice(0, 3);
-
     setFilteredDaerah(results);
+  };
+
+  const fetchKomentarData = async () => {
+    const supabase = createClient(supabaseUrl, supabaseApiKey);
+    const { data, error } = await supabase.from("Komentar").select("komentar");
+    if (data) {
+      setKomentarData(data);
+    }
+    if (error) {
+      console.error("Error fetching komentar:", error);
+    }
+  };
+
+  const handleKirimKomentar = async () => {
+    const supabase = createClient(supabaseUrl, supabaseApiKey);
+    const { data, error } = await supabase
+      .from("Komentar")
+      .insert([{ komentar: komentarValue }]);
+    if (error) {
+      console.error("Error adding komentar:", error);
+    } else {
+      setKomentarValue("");
+      fetchKomentarData();
+    }
   };
 
   const increaseVote = () => {
     if (window.confirm("Apakah Anda yakin daerah ini masih terjadi banjir?")) {
-      // Kode untuk menambah vote...
-      if (currentChartData) {
-        const today = new Date().toISOString().split("T")[0];
-        const index = currentChartData.data.dates.findIndex(
-          (date) => date === today
-        );
-
-        if (index !== -1) {
-          const updatedVotes = [...currentChartData.data.votes];
-          updatedVotes[index]++;
-          setCurrentChartData({
-            ...currentChartData,
-            data: {
-              ...currentChartData.data,
-              votes: updatedVotes,
-            },
-          });
-        }
-      }
+      // Logic to increase vote...
     }
   };
 
   const decreaseVote = () => {
     if (window.confirm("Apakah Anda yakin daerah ini tidak terjadi banjir?")) {
-      // Kode untuk mengurangi vote...
-      if (currentChartData) {
-        const today = new Date().toISOString().split("T")[0];
-        const index = currentChartData.data.dates.findIndex(
-          (date) => date === today
-        );
-
-        if (index !== -1) {
-          const updatedVotes = [...currentChartData.data.votes];
-          updatedVotes[index]--;
-          setCurrentChartData({
-            ...currentChartData,
-            data: {
-              ...currentChartData.data,
-              votes: updatedVotes,
-            },
-          });
-        }
-      }
+      // Logic to decrease vote...
     }
   };
 
@@ -158,12 +150,12 @@ const MyLaporan = () => {
               <div className="submit-komentar">
                 <input
                   type="text"
-                  name=""
-                  id=""
                   placeholder="Tambah Komentar...."
                   className="input-komentar"
+                  value={komentarValue}
+                  onChange={(e) => setKomentarValue(e.target.value)}
                 />
-                <button className="kirim">
+                <button className="kirim" onClick={handleKirimKomentar}>
                   <AiOutlineSend className="send-icon" />
                 </button>
               </div>
@@ -173,18 +165,12 @@ const MyLaporan = () => {
             </div>
             <div className="komentar">
               <div className="riwayat-laporan">
-                <div className="riwayat-laporan-1">
-                  <BiUserCircle className="user-logo" size={40} />
-                  <span>User 1</span>
-                </div>
-                <div className="riwayat-laporan-2">
-                  <BiUserCircle className="user-logo" size={40} />
-                  <span>User 2</span>
-                </div>
-                <div className="riwayat-laporan-3">
-                  <BiUserCircle className="user-logo" size={40} />
-                  <span>User 3</span>
-                </div>
+                {komentarData.slice(0, 5).map((komentar, index) => (
+                  <div key={index}>
+                    <BiUserCircle className="user-logo" size={40} />
+                    <span className="komentar-text">{komentar.komentar}</span>
+                  </div>
+                ))}
               </div>
             </div>
           </div>
