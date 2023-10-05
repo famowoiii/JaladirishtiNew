@@ -1,0 +1,32 @@
+[
+  {
+    "id": "0",
+    "title": "Banjir di Kawasan Pesisir Surabaya",
+    "author": "Alejandro Escamilla",
+    "width": 5000,
+    "height": 3333,
+    "download_url": "https://gdb.voanews.com/03370000-0aff-0242-db71-08dad46b6f98_w1023_r1_s.jpg",
+    "linkberita": "http://www.google.com",
+    "date": "12-12-2012"
+  },
+  {
+    "id": "1",
+    "title": "Gadung Dilanda Banjir",
+    "author": "John Doe",
+    "width": 4000,
+    "height": 2666,
+    "download_url": "https://awsimages.detik.net.id/community/media/visual/2021/09/27/banjir-di-kampar-dok-istimewa-2_169.jpeg?w=1200",
+    "linkberita": "http://www.google.com",
+    "date": "12-12-2012"
+  },
+  {
+    "id": "2",
+    "title": "Janti Hujan Deras",
+    "author": "Jane Smith",
+    "width": 6000,
+    "height": 4000,
+    "download_url": "https://cdn.antaranews.com/cache/1200x800/2022/03/15/banjir-sumpiuh.jpeg",
+    "linkberita": "http://www.google.com",
+    "date": "12-12-2012"
+  }
+]

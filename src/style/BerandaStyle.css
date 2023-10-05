@@ -1,0 +1,329 @@
+/* Section Pertama (section-1)*/
+.section-1-text {
+  padding-top: 15rem;
+  margin-left: 6rem;
+  margin-bottom: 3rem;
+  color: white;
+}
+.section-1-text p {
+  font-size: 22px;
+}
+
+.section-1-text .btn-laporkan-banjir {
+  text-decoration: none;
+  color: black;
+  font-weight: 600;
+}
+.section-1-text #btn-laporkan-banjir {
+  border: none;
+  border-radius: 70px;
+}
+
+/* Gunakan path relatif */
+.section-1 {
+  background-image: url("../assets/Background-1.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: fit-content;
+}
+
+#btn-laporkan-banjir {
+  border: 1px solid rgb(147, 191, 233);
+  border-radius: 5px;
+  width: 13rem;
+  height: 3rem;
+  margin-top: 3rem;
+}
+
+/* Section kedua (section-2)*/
+.section-2-text {
+  margin-left: 6rem;
+}
+.section-2-wrapper {
+  display: flex;
+  margin-top: 3rem;
+  margin-right: 9rem;
+  gap: 2rem;
+}
+.img-tentang-surabaya {
+  width: 450px;
+}
+
+/* Section ketiga (section-3)*/
+.section-3 {
+  background-image: url("../assets/Background-2.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: fit-content;
+}
+
+.laporan-section {
+  max-height: 150px; /* Anda bisa menyesuaikan tinggi maksimal sesuai kebutuhan */
+  overflow-y: auto; /* Mengizinkan pengguliran vertikal */
+}
+
+.svg-flip-pertama {
+  transform: scaleX(-1) scaleY(-1);
+}
+
+.kiri {
+  max-width: 40%;
+  margin-left: 4px;
+}
+.kanan {
+  display: flex;
+}
+#button-search {
+  border-radius: 5px;
+  border: none;
+  background-color: rgb(237, 123, 18);
+  color: white;
+}
+.search-bar {
+  display: flex;
+  gap: 0.8rem;
+  width: 100%;
+
+  transform: translateX(-5rem);
+}
+.laporan-section {
+  background-color: aliceblue;
+  border-radius: 10px;
+  width: 100%;
+  margin-top: 9px;
+  min-height: fit-content;
+}
+.laporan-section.laporan-section-1 {
+  border-top: none;
+}
+.laporan-section div {
+  min-height: 80px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 8px;
+}
+#cari-daerahmu {
+  width: 39rem;
+  height: 2rem;
+  border-radius: 4px;
+  border: none;
+}
+.section-3-wrapper {
+  display: flex;
+  padding-left: 5rem;
+  padding-right: 4rem;
+  flex-wrap: wrap;
+  height: fit-content;
+}
+
+/* Section keempat (section-4)*/
+
+.section-4-wrapper {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 1rem;
+  width: 100%;
+}
+
+.section-4 {
+  min-height: fit-content;
+}
+.map-text {
+  display: flex;
+  align-items: center;
+  padding-top: 1rem;
+}
+
+.map-text-extend1 {
+  margin-right: 1vh; /* Atur margin antara ikon dan teks */
+}
+
+/* Section lima (section-5)*/
+
+.section-5 {
+  background-color: rgb(0, 69, 155);
+  min-height: fit-content;
+}
+.section-5-wrapper {
+  margin: 3rem;
+  margin-left: 3rem;
+  color: white;
+  margin-right: 3rem;
+  display: flex;
+  gap: 3rem;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.sectoin-5-text {
+  display: flex;
+  flex-direction: row;
+}
+/* section-6*/
+.section-6-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+.section-6-wrapper .section-6-text {
+  margin-left: 41%;
+  font-size: 27px;
+  font-weight: 700;
+  padding-bottom: 1rem;
+}
+/* section-7*/
+
+.section-7-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100vw;
+}
+
+.section-7-title h2 {
+  margin-top: 10rem;
+  font-size: 10vh;
+}
+
+.section-7-content {
+  display: flex;
+  width: 100vw;
+  max-width: 1920px;
+  height: 860px;
+  justify-content: center;
+  align-items: center;
+}
+
+.tutorial {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2vw;
+}
+
+.tutorial button {
+  display: flex;
+  align-items: center;
+  gap: 2vw;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
+
+.tutorial button p:first-child {
+  width: 5vw;
+  height: 5vw;
+  max-width: 100px;
+  max-height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2vw;
+  color: #ddd;
+  background-color: #a5a3a3;
+  border-radius: 50%;
+  font-weight: bold;
+}
+
+.tutorial button p:last-child {
+  width: 37.5vw;
+  height: 5vw;
+  max-width: 720px;
+  max-height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5vw;
+  color: white;
+  background-color: #00459b;
+  border-radius: 20px;
+}
+
+.section-7-img {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* section-8*/
+
+.section-8 {
+  background-color: rgb(65, 64, 64);
+  color: white;
+  text-decoration: none;
+}
+.section-8-wrapper {
+  display: flex;
+  flex-direction: row;
+  padding-left: 3rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.footer-title {
+  width: 28%;
+}
+.footer-menu {
+  gap: 1rem;
+  width: 65%;
+  display: flex;
+  flex-direction: row;
+  gap: 3rem;
+
+  margin-left: 3rem;
+}
+
+.footer-menu div .link {
+  text-decoration: none;
+}
+
+@media screen and (min-width: 320px) and (max-width: 1024px) {
+  /* Mengurangi ukuran font dalam persen */
+  /* section-1*/
+  .section-1 {
+    font-size: 60%;
+  }
+  /* section-2*/
+  .section-2 {
+    font-size: 60%;
+  }
+
+  .section-2 img {
+    width: 450%;
+  }
+  /* section-3*/
+  .section-3 {
+    font-size: 60%;
+  }
+  .section-3-wrapper {
+    display: flex;
+    border: 4px white solid;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    flex-wrap: wrap;
+    min-height: fit-content;
+  }
+  .kiri {
+    margin-left: 1rem;
+  }
+
+  /* section-4*/
+  .section-4 {
+    font-size: 60%;
+  }
+  /* section-5*/
+  .section-5 {
+    font-size: 60%;
+  }
+  .section-5-wrapper {
+    flex-wrap: wrap;
+  }
+  /* section-6*/
+  .section-6 {
+    font-size: 60%;
+  }
+}

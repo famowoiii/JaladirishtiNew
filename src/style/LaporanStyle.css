@@ -1,0 +1,225 @@
+.navbar {
+  position: absolute;
+  background-color: rgb(0, 69, 155);
+  height: 4rem;
+  min-width: 100%;
+  z-index: 1;
+}
+.laporan-wrapper {
+  display: flex;
+  flex-direction: column;
+  padding-top: 5rem;
+  background-color: rgb(246, 246, 246);
+}
+.search-bar {
+  display: flex;
+  flex-direction: row;
+  margin-left: 5rem;
+}
+.search-bar .title {
+  width: 45.5%;
+  margin-bottom: 8rem;
+}
+.input {
+  width: 54.5%;
+
+  gap: 1rem;
+}
+.input input {
+  width: 75%;
+  background-color: rgb(255,  255,  255);
+  border-radius: 4px;
+  margin-top: 1rem;
+  border: none;
+  height: 2.3rem;
+}
+.input button {
+  margin-left: 2rem;
+  background-color: rgb(237, 123, 18);
+  border: none;
+  border-radius: 4px;
+  color: rgb(255,  255,  255);
+  height: 2.3rem;
+  transform: translateX(-1rem);
+}
+.komentar {
+  gap: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  border-radius: 9px;
+  background-color: rgb(218, 203, 203);
+  transform: translateY(-1rem);
+}
+.content {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 1rem;
+
+  padding-left: 5rem;
+  padding-top: 2rems;
+}
+.chart .chart-laporan {
+  background-color: white;
+  margin: 8px;
+  height: 50vh;
+  border-radius: 5px;
+}
+.chart {
+  width: 520px;
+  border-radius: 6px;
+  height: 38vh;
+  display: flex;
+  padding: 5px;
+  justify-content: center;
+  flex-direction: column;
+  background-color: rgb(255,  255,  255);
+}
+.konfirmasi {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+  transform: translateY(50px);
+}
+
+.konfirmasi h2 {
+  display: flex;
+  justify-content: center;
+}
+
+.input-komentar {
+  margin-top: 2rem;
+  border-radius: 5px;
+  border: none;
+  background-color: rgb(255,  255,  255);
+}
+.konfirmasi button {
+  width: 70%;
+  transform: translateX(83px);
+  border-radius: 5px;
+  border: none;
+  height: 50px;
+}
+
+.konfirmasi .masih {
+  background-color: rgb(210, 0, 0);
+  color: whitesmoke;
+}
+.konfirmasi .tidak {
+  background-color: rgb(0, 69, 155);
+  color: whitesmoke;
+}
+.konfirmasi .surut {
+  background-color: rgb(200, 144, 0);
+  color: whitesmoke;
+}
+
+.laporan-kelurahan {
+  background-color: rgb(210, 0, 0);
+  color: white;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  border-radius: 7px;
+  width: 60%;
+  margin-left: 20%;
+}
+.laporan-keseluruhan {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(226, 215, 201);
+  width: 60%;
+  border-radius: 6px;
+  margin-top: 4px;
+  margin-left: 20%;
+}
+
+.kanan {
+  padding-left: 5rem;
+
+  display: flex;
+  flex-direction: column;
+  width: 620px;
+  margin-right: 3rem;
+}
+
+.kiri {
+  display: flex;
+  width: 1000px;
+  flex-direction: column;
+
+  justify-content: center;
+}
+.kiri-content {
+  gap: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.submit-komentar {
+  width: 480px;
+  background-color: whitesmoke;
+  border-radius: 6px;
+
+  padding: 1rem;
+  height: 8px;
+  margin-bottom: 3rem;
+}
+.submit-komentar input {
+  width: 92%;
+  border-radius: 3px;
+  transform: translateY(-2.6rem);
+  height: 19px;
+  background-color: whitesmoke;
+  background-color: none;
+}
+.submit-komentar button {
+  height: 19px;
+  background-color: whitesmoke;
+  border: none;
+  transform: translateY(-2.6rem) translateX(1rem);
+}
+.riwayat-laporan div {
+  display: flex;
+  justify-content: flex-start;
+  gap: 2rem;
+  background-color: rgb(218, 203, 203);
+}
+.riwayat-laporan div .user-logo {
+  margin-right: 6rem;
+}
+.komentar-title {
+  transform: translateY(-2rem);
+}
+
+.search-bar {
+  display: flex;
+  width: 100%;
+  gap: 10px; /* Jarak antara input dan tombol, Anda bisa menyesuaikannya */
+}
+
+.search-bar input {
+  flex: 1; /* Menggunakan seluruh ruang yang tersedia */
+}
+
+.search-results {
+  overflow-y: auto; /* Tampilkan scrollbar jika ada banyak item */
+}
+
+.search-results div {
+  cursor: pointer;
+  margin-top: 1vh;
+}
+
+.chart-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 350px; /* Anda dapat mengatur sesuai kebutuhan */
+  margin-bottom: 20px;
+}

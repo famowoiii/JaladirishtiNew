@@ -1,0 +1,160 @@
+.berita {
+  display: flex;
+  justify-content: flex-start;
+  gap: 1rem;
+}
+
+.navbar {
+  background-color: rgb(0, 69, 155);
+  height: 4rem;
+  min-width: 100%;
+  position: absolute;
+  z-index: 1;
+}
+
+.berita-wrapper {
+  padding-top: 6rem;
+  padding-left: 1rem;
+  margin-left: 5rem;
+  width: 65%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem; /* Jarak antar berita */
+}
+
+.keterangan {
+  padding-left: 10px;
+}
+
+.berita-side {
+  height: 100vh;
+  width: 35%;
+  margin-right: 3rem;
+  border: none;
+  padding-top: 7rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem; /* Pemisah antara berita populer */
+}
+
+.berita-side .berita-populer {
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 1vw;
+}
+
+.berita-side .berita-populer div {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+  padding: 5px;
+}
+
+.berita-side .berita-populer div img {
+  width: 110px;
+}
+
+.card-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: 1rem; /* Pemisah antar kartu berita */
+}
+
+.card-berita {
+  display: flex;
+  border: none;
+  background-color: whitesmoke;
+  flex-direction: column;
+  border-radius: 4px;
+  padding: 8px;
+  width: 30%; /* Menentukan lebar kartu */
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+  height: 35vh; /* Tinggi kartu */
+  justify-content: center;
+}
+
+.card-berita .ketergan {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  justify-content: flex-start;
+}
+
+.card-berita img {
+  width: 150px;
+  margin-left: 12%;
+  border-radius: 6px;
+  object-fit: cover; /* Ini akan memastikan gambar selalu terlihat bagus di dalam kartu */
+  height: 60%; /* Menyesuaikan tinggi gambar dengan kartu */
+}
+
+.date {
+  font-size: small;
+}
+
+/*di bawa adalah responsive dari berita dalam lebar maksimal 412*/
+@media only screen and (max-width: 480px) {
+  .card-wrapper {
+    display: flex;
+    margin-left: 0px;
+  }
+  .berita-wrapper {
+    padding-left: 0px;
+  }
+
+  .berita-wrapper p {
+    margin-bottom: 1rem;
+    gap: 1rem;
+    font-size: 1.4rem;
+    font-weight: 500;
+  }
+
+  .card-berita {
+    width: 250px;
+    justify-content: center;
+  }
+
+  .card-berita .keterangan {
+    font-size: 3px;
+  }
+
+  .card-berita .title {
+    font-size: medium;
+  }
+
+  .card-berita .link-berita {
+    font-size: 10px;
+    text-decoration: none;
+  }
+
+  .card-berita .date {
+    font-size: 11px;
+  }
+
+  .card-berita .deskripsi {
+    font-size: 12px;
+  }
+  .card-berita img {
+    max-width: 150px;
+  }
+  .berita {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .berita-side {
+    padding-top: 1rem;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .berita-side h3 {
+    padding-left: 1rem;
+    width: fit-content;
+  }
+
+  .berita-side .berita-populer {
+    width: 380px;
+    transform: translateX(0.4rem);
+  }
+}
