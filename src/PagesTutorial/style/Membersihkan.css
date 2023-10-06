@@ -1,16 +1,16 @@
 .flex-container {
   display: flex;
-  flex-direction: column; /* Selalu orientasi kolom */
-  align-items: center; /* Pusatkan konten secara horizontal */
-  gap: 20px; /* Jarak antara SVG dan konten teks */
-  height: 100vh; /* Tinggi viewport */
-  justify-content: center; /* Pusatkan konten secara vertikal */
+  flex-direction: column; 
+  align-items: center; 
+  gap: 20px; 
+  height: 100vh; 
+  justify-content: center;
 }
 
 .svg-box img,
 .content-box {
-  max-width: 90%; /* Lebar maksimal 90% dari viewport */
-  margin: 0 auto; /* Pusatkan elemen */
+  max-width: 90%; 
+  margin: 0 auto; 
 }
 
 .svg-box img {
@@ -19,19 +19,17 @@
 }
 
 .content-box {
-  overflow-y: auto; /* Tambahkan scroll jika kontennya melebihi tinggi container */
+  overflow-y: auto; 
 }
-
-/* Media query untuk tablet dan desktop */
 
 @media screen and (min-width: 768px) {
   .svg-box img {
-    width: 320px; /* Lebar SVG tetap */
-    height: 320px; /* Tinggi SVG tetap */
+    width: 320px; 
+    height: 320px; 
   }
 
   .content-box {
-    max-width: 600px; /* Lebar maksimal konten */
-    height: auto; /* Tinggi otomatis */
+    max-width: 600px; 
+    height: auto; 
   }
 }

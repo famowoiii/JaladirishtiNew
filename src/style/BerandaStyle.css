@@ -58,8 +58,8 @@
 }
 
 .laporan-section {
-  max-height: 150px; /* Anda bisa menyesuaikan tinggi maksimal sesuai kebutuhan */
-  overflow-y: auto; /* Mengizinkan pengguliran vertikal */
+  max-height: 150px; 
+  overflow-y: auto; 
 }
 
 .svg-flip-pertama {
@@ -138,7 +138,7 @@
 }
 
 .map-text-extend1 {
-  margin-right: 1vh; /* Atur margin antara ikon dan teks */
+  margin-right: 1vh; 
 }
 
 /* Section lima (section-5)*/

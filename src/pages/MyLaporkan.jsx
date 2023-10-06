@@ -9,7 +9,6 @@ const MyLaporkan = () => {
     "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InRqeGNlcG9ybm9odnhmcXlnbWlxIiwicm9sZSI6ImFub24iLCJpYXQiOjE2OTU2NTYwNjYsImV4cCI6MjAxMTIzMjA2Nn0.5Vgf8SPA2gb78BOXJhAUcqal-hGPuGDmKUG8zXwTZBw";
   const supabaseUrl = "https://tjxcepornohvxfqygmiq.supabase.co";
   const supabaseKey = apikey;
-  // Perhatikan perubahan ini
   const supabase = createClient(supabaseUrl, supabaseKey);
   const [userLocation, setUserLocation] = useState({
     latitude: "",
@@ -35,10 +34,9 @@ const MyLaporkan = () => {
 
   const handleLaporkanClick = async () => {
     const { data, error } = await supabase
-      .from("tabel") // Ganti "nama_tabel" dengan nama tabel Anda
+      .from("tabel") 
       .upsert([
         {
-          // Data yang akan dimasukkan ke dalam tabel
           data: [userLocation.latitude, userLocation.longitude],
         },
       ]);
@@ -107,7 +105,6 @@ const MyLaporkan = () => {
                   onChange={handleSearch}
                   placeholder="Cari Daerahmu!"
                 />
-                <button id="button-search">Cari</button>
               </div>
 
               <div className="laporan-section">

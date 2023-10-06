@@ -25,13 +25,13 @@ export const BeritaSlider = (props) => {
   return (
     <div className="BeritaSlider-wrapper">
       <Carousel
-        swipeable={true} // Aktifkan swipe
+        swipeable={true}
         draggable={false}
         showDots={true}
         responsive={responsive}
         ssr={true}
         infinite={true}
-        autoPlay={false} // Matikan otomatisasi
+        autoPlay={false}
         autoPlaySpeed={1500}
         keyBoardControl={true}
         customTransition="all .5"

@@ -1,9 +1,8 @@
 import React, { useState } from "react";
 
 const SearchBar = ({ handleSearch }) => {
-  const [searchTerm, setSearchTerm] = useState(""); // State untuk menyimpan input pencarian
+  const [searchTerm, setSearchTerm] = useState("");
 
-  // Fungsi untuk mengubah input pencarian
   const handleSearchChange = (e) => {
     setSearchTerm(e.target.value);
   };

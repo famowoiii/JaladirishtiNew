@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import "../style/TentangStyle.css";
 
 const MyTentang = () => {
@@ -7,8 +6,8 @@ const MyTentang = () => {
     <div>
       <div className="navbar"></div>
       <div className="tentang-wrapper">
-        <div className="title">
-          <h1>Selamat datang di Situs Pelaporan Banjir Kota Surabaya</h1>
+        <div className="judul">
+          <h3>Selamat datang di Situs Pelaporan Banjir Kota Surabaya</h3>
           <p>
             Kami bangga mempersembahkan layanan Sistem Informasi Banjir dan
             Pelaporan Banjir terkini di Kota Surabaya. Situs ini bertujuan untuk

@@ -5,8 +5,27 @@
   min-width: 100%;
   z-index: 1;
 }
+
 .tentang-wrapper {
   padding-top: 6rem;
   padding-left: 5rem;
   padding-right: 4rem;
+  width: auto;
+  height: 100vh;
+  background-image: url("../../public/jalad.svg");
+  background-size: cover;
+}
+
+.tentang-wrapper judul {
+  margin: 0;
+  font-size: large;
+}
+
+.judul h3 {
+  font-size: 4.5em;
+  font-weight: bold;
+}
+
+.judul p {
+  font-size: 1.2em;
 }

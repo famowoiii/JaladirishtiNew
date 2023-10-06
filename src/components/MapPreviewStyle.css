@@ -4,8 +4,6 @@
 }
 
 @media screen and (min-width: 320px) and (max-width: 1024px) {
-  /* Mengurangi ukuran font dalam persen */
-  /* section-1*/
   #map1 {
     font-size: 60%;
     width: 320px;

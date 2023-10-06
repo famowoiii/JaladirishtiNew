@@ -115,7 +115,6 @@ const MapPotensi = () => {
         console.error("Error fetching 'sheet001.json':", error);
       });
 
-    // Return a cleanup function to destroy the map when the component unmounts
     return () => {
       map.setTarget(null);
     };

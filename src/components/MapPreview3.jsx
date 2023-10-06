@@ -11,15 +11,15 @@ import VectorSource from "ol/source/Vector";
 import VectorLayer from "ol/layer/Vector";
 import GeoJSON from "ol/format/GeoJSON";
 
-import "./MapPreview2Style.css";
+import "./MapPreview3Style.css";
 
-const MapPreview = () => {
+const MapPreview3 = () => {
   const [redCircleSource, setRedCircleSource] = useState(new VectorSource());
 
   useEffect(() => {
     const redCircleStyle = new Style({
       image: new Circle({
-        radius: 20,
+        radius: 6,
         fill: new Fill({ color: "red" }),
         stroke: new Stroke({ color: "black", width: 0.5 }),
       }),
@@ -44,21 +44,21 @@ const MapPreview = () => {
       }),
     });
 
-    // Tentukan lokasi tiga daerah
-    const locations = [
-      [112.745596, -7.263907], // Lokasi 1
-      [112.7156860800001, -7.3016159899999407], // Lokasi 2
-      [112.71433788000002, -7.2561140099999939],
-      [112.66010473546623, -7.2446924516217166],
-    ];
+    fetch("URL_DATABASE_ATAU_API")
+      .then((response) => response.json())
+      .then((data) => {
+        if (data.latitude && data.longitude) {
+          const redCircleFeature = new Feature({
+            geometry: new Point(fromLonLat([data.longitude, data.latitude])),
+          });
+          redCircleSource.addFeature(redCircleFeature);
 
-    // Buat titik merah untuk masing-masing lokasi
-    locations.forEach((loc) => {
-      const redCircleFeature = new Feature({
-        geometry: new Point(fromLonLat(loc)),
+          map.getView().setCenter(fromLonLat([data.longitude, data.latitude]));
+        }
+      })
+      .catch((error) => {
+        console.error("Error fetching data:", error);
       });
-      redCircleSource.addFeature(redCircleFeature);
-    });
 
     const geojsonSource = new VectorSource({
       url: "./ADMINISTRASIDESA_AR_25K_Feat.json",
@@ -83,4 +83,4 @@ const MapPreview = () => {
   );
 };
 
-export default MapPreview;
+export default MapPreview3;

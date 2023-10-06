@@ -22,7 +22,6 @@ export const MapPreview2 = () => {
     });
 
     return () => {
-      // Cleanup function to destroy the map when the component unmounts
       map.setTarget(null);
     };
   }, []);

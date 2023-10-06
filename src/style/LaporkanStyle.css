@@ -3,8 +3,8 @@
   background-repeat: no-repeat;
   background-size: cover;
   justify-content: center;
-  width: 100vw; /* lebar 100% dari lebar viewport */
-  height: 120vh; /* tinggi 100% dari tinggi viewport */
+  width: 100vw; 
+  height: 120vh; 
 }
 
 .laporkan-page {
@@ -21,12 +21,12 @@
   color: #fff;
   padding: 10px 20px;
   border: none;
-  border-radius: 5px; /* Ini adalah properti border radius */
+  border-radius: 5px; 
   cursor: pointer;
 }
 
 .card {
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Tambahkan bayangan di sini */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); 
   padding-left: 3rem;
   padding-right: 3rem;
   padding-top: 5rem;
@@ -44,23 +44,22 @@
 }
 
 .laporan-section a {
-  text-decoration: none; /* Menghilangkan garis bawah pada link */
-  color: black; /* Mengatur warna teks menjadi hitam atau warna lain yang Anda inginkan */
+  text-decoration: none; 
+  color: black;
 }
 
 .kiri {
   display: flex;
-  flex-direction: column; /* Agar kontennya disusun secara vertikal */
-  width: 100%; /* Menggunakan seluruh lebar yang tersedia */
+  flex-direction: column;
+  width: 100%; 
 }
 
 .search-results a {
-  text-decoration: none; /* Menghilangkan garis bawah pada link */
-  color: inherit; /* Pewarisan warna dari elemen induk */
+  text-decoration: none; 
+  color: inherit; 
 }
 
 @media screen and (min-width: 320px) and (max-width: 1024px) {
-  /* Mengurangi ukuran font dalam persen */
   .laporkan-page {
     font-size: 64%;
   }

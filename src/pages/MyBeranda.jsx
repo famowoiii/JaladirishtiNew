@@ -1,19 +1,16 @@
 import React from "react";
 import "../style/BerandaStyle.css";
 import { Link } from "react-router-dom";
-import { useRef, useEffect } from "react";
-import { BeritaSlider } from "../components/BeritaSlider";
+import { useEffect } from "react";
 import MapPotensi from "../function/MapPotensi";
 import { BsFillExclamationCircleFill } from "react-icons/bs";
 import DarkVariantExample from "../components/Topografi";
 import "../Data/DataBerita.json";
-import { MapPreview2 } from "../components/MapPreview2";
-import { Modal, Button } from "react-bootstrap";
 import "react-bootstrap/dist/react-bootstrap";
 //Ini buat map search sementara
 import daerahList from "../Data/DaerahList.json";
 
-import MapPreview from "../components/MapPreview";
+import MapPreview from "../components/MapPreview3";
 
 //import component yang berisikan keterangan untnuk button pada section 7
 import { Step1 } from "../PagesTutorial/Membersihkan";
@@ -28,14 +25,12 @@ const MyBeranda = (props) => {
   const handleCloseModal = () => setShowModal(false);
 
   useEffect(() => {
-    // Tambahkan kode untuk menampilkan modal di sini
     if (showModal) {
       handleShowModal();
     }
   }, [showModal]);
 
   const handleShowModal = () => {
-    // Logika untuk menampilkan modal
   };
 
   useEffect(() => {
@@ -66,13 +61,9 @@ const MyBeranda = (props) => {
             latitude: latitude,
             longitude: longitude,
           };
-          // Menyalin data lokasi pengguna sebelumnya dari state
           const existingData = [...userLocation];
-          // Menambahkan lokasi baru ke dalam array
           existingData.push(userLocationData);
-          // Simpan lokasi pengguna ke localStorage
           localStorage.setItem("userLocation", JSON.stringify(existingData));
-          // Perbarui state userLocation dengan data yang sudah ada
           setUserLocation(existingData);
           setInputValue(`${latitude}, ${longitude}`);
         },
@@ -170,11 +161,7 @@ const MyBeranda = (props) => {
           </div>
         </div>
       </section>
-
-      {/*SVG pemisah TARUH SINI*/}
-
       {/* Section-3 Start*/}
-
       <section className="section-3">
         <svg viewBox="0 0 1440 320" className="svg-1 svg-flip-pertama">
           <path
@@ -193,7 +180,6 @@ const MyBeranda = (props) => {
                 onChange={handleSearch}
                 placeholder="Cari Daerahmu!"
               />
-              <button id="button-search">Cari</button>
             </div>
 
             <div className="laporan-section">
@@ -279,6 +265,7 @@ const MyBeranda = (props) => {
           <div className="section-7-title">
             <h2>UPAYA UPAYA MENCEGAH BANJIR</h2>
           </div>
+
           <div className="section-7-content">
             <div className="tutorial">
               <button

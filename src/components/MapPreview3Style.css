@@ -4,10 +4,9 @@
 }
 
 .map-preview {
-  width: 83vw;
-  height: 60vh;
+  width: 550px;
+  height: 280px;
   margin: 0 auto;
-  background-color: rgb(13, 38, 61);
 }
 
 @media screen and (min-width: 320px) and (max-width: 1024px) {

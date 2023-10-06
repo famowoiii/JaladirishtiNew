@@ -1,6 +1,5 @@
 .navbar {
   position: absolute;
-  background-color: rgb(0, 69, 155);
   height: 4rem;
   min-width: 100%;
   z-index: 1;
@@ -18,13 +17,15 @@
 }
 .search-bar .title {
   width: 45.5%;
-  margin-bottom: 8rem;
+  margin-bottom: 1rem;
+  margin-left: 5rem;
 }
 .input {
+  position: relative;
   width: 54.5%;
-
   gap: 1rem;
 }
+
 .input input {
   width: 75%;
   background-color: rgb(255,  255,  255);
@@ -32,7 +33,18 @@
   margin-top: 1rem;
   border: none;
   height: 2.3rem;
+  margin-bottom: 2rem;
+  background-color: whitesmoke;
 }
+
+.search-results {
+  position: absolute;
+  width: 50%;
+  top: 55%;
+  left: 0;
+  z-index: 1000;
+}
+
 .input button {
   margin-left: 2rem;
   background-color: rgb(237, 123, 18);
@@ -42,16 +54,7 @@
   height: 2.3rem;
   transform: translateX(-1rem);
 }
-.komentar {
-  gap: 1rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border: none;
-  border-radius: 9px;
-  background-color: rgb(218, 203, 203);
-  transform: translateY(-1rem);
-}
+
 .content {
   display: flex;
   flex-direction: row;
@@ -63,31 +66,16 @@
 }
 .chart .chart-laporan {
   background-color: white;
-  margin: 8px;
-  height: 50vh;
-  border-radius: 5px;
+  margin-right: 5vh;
 }
 .chart {
-  width: 520px;
-  border-radius: 6px;
+  width: 550px;
   height: 38vh;
   display: flex;
   padding: 5px;
   justify-content: center;
   flex-direction: column;
-  background-color: rgb(255,  255,  255);
-}
-.konfirmasi {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  gap: 5px;
-  transform: translateY(50px);
-}
-
-.konfirmasi h2 {
-  display: flex;
-  justify-content: center;
+  margin-top: 10vh;
 }
 
 .input-komentar {
@@ -108,13 +96,29 @@
   background-color: rgb(210, 0, 0);
   color: whitesmoke;
 }
+
 .konfirmasi .tidak {
   background-color: rgb(0, 69, 155);
   color: whitesmoke;
+  margin-bottom: 5vh;
 }
-.konfirmasi .surut {
-  background-color: rgb(200, 144, 0);
-  color: whitesmoke;
+
+.konfirmasi {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+}
+
+.konfirmasi h2 {
+  display: flex;
+  justify-content: center;
+}
+
+.h-100.p-5.text-bg-dark.rounded-3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .laporan-kelurahan {
@@ -161,7 +165,7 @@
   justify-content: center;
 }
 .submit-komentar {
-  width: 480px;
+  width: auto;
   background-color: whitesmoke;
   border-radius: 6px;
 
@@ -183,31 +187,53 @@
   border: none;
   transform: translateY(-2.6rem) translateX(1rem);
 }
+
+.riwayat-laporan {
+  max-height: 220px;
+  overflow-y: auto;
+  padding: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+
+  line-height: 40px;
+  padding: 0 10px;
+  vertical-align: middle;
+}
+
 .riwayat-laporan div {
   display: flex;
   justify-content: flex-start;
   gap: 2rem;
-  background-color: rgb(218, 203, 203);
+  background-color: rgb(255, 255, 255);
+  margin-bottom: 1rem;
 }
+
+.komentar {
+  gap: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  background-color: rgb(255, 255, 255);
+  transform: translateY(-1rem);
+}
+
 .riwayat-laporan div .user-logo {
-  margin-right: 6rem;
-}
-.komentar-title {
-  transform: translateY(-2rem);
+  margin-right: 2px;
 }
 
 .search-bar {
   display: flex;
   width: 100%;
-  gap: 10px; /* Jarak antara input dan tombol, Anda bisa menyesuaikannya */
+  gap: 10px;
 }
 
 .search-bar input {
-  flex: 1; /* Menggunakan seluruh ruang yang tersedia */
+  flex: 1;
 }
 
 .search-results {
-  overflow-y: auto; /* Tampilkan scrollbar jika ada banyak item */
+  overflow-y: auto;
 }
 
 .search-results div {
@@ -215,11 +241,72 @@
   margin-top: 1vh;
 }
 
-.chart-container {
+.laporan-title {
+  width: 50%;
+}
+
+.laporan-input {
+  width: 50%;
+}
+
+.container-fluid {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
+  justify-content: center;
+}
+
+.map {
   width: 100%;
-  height: 350px; /* Anda dapat mengatur sesuai kebutuhan */
-  margin-bottom: 20px;
+}
+
+.h-100.p-5.text-bg-dark.rounded-3 {
+  border: 1px solid #eaeaea;
+}
+
+.riwayat-laporan::-webkit-scrollbar {
+  display: none;
+  background-color: #eaeaea;
+}
+
+.riwayat-laporan {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+header {
+  z-index: 2;
+  position: relative;
+  margin: 0;
+  padding: 5rem 0;
+  background-image: url("../../public/header-laporan.svg");
+  background-repeat: no-repeat; 
+  background-size: auto; 
+  background-position: center; 
+}
+
+.title {
+  margin-left: 20px;
+  margin-bottom: 10px;
+}
+
+.full-cover {
+  background-image: url("../../public/jalad.svg");
+  background-size: cover;
+}
+
+.text-bg-dark {
+  background-color: white;
+}
+
+.bg-body-tertiaryy {
+  background-color: white;
+}
+
+.transparent-bg {
+  background-color: transparent !important;
+}
+
+.container-fluid.py-3 * {
+  background-color: transparent !important;
 }

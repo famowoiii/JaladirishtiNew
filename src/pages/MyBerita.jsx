@@ -1,16 +1,16 @@
 import React, { useState, useEffect } from "react";
-import beritaData from "../data/dataBeritaNew.json"; // Import data JSON langsung
+import beritaData from "../data/dataBeritaNew.json";
 import "../style/BeritaStyle.css";
 
 const MyBerita = () => {
-  const [data, setData] = useState(beritaData); // Gunakan data langsung sebagai state awal
+  const [data, setData] = useState(beritaData);
 
   return (
     <div className="berita">
       <div className="navbar"></div>
       <div className="berita-wrapper">
         <h1>Berita Banjir di Surabaya</h1>
-        <p>berita terbaru </p>
+        <h4>Berita Terbaru </h4>
         <div className="card-wrapper">
           {data.map((item) => (
             <div key={item.id} className="card-berita">

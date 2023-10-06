@@ -42,7 +42,7 @@ const MyLaporan = () => {
       .filter((daerah) =>
         daerah.name.toLowerCase().includes(searchValue.toLowerCase())
       )
-      .slice(0, 3);
+      .slice(0, 1);
     setFilteredDaerah(results);
   };
 
@@ -72,13 +72,13 @@ const MyLaporan = () => {
 
   const increaseVote = () => {
     if (window.confirm("Apakah Anda yakin daerah ini masih terjadi banjir?")) {
-      // Logic to increase vote...
+      // BE
     }
   };
 
   const decreaseVote = () => {
     if (window.confirm("Apakah Anda yakin daerah ini tidak terjadi banjir?")) {
-      // Logic to decrease vote...
+      // BE
     }
   };
 
@@ -117,36 +117,69 @@ const MyLaporan = () => {
   };
 
   return (
-    <div>
+    <div className="full-cover">
       <div className="navbar"></div>
-      <div className="laporan-wrapper">
-        <div className="search-bar">
-          <div className="title">
-            <h1>Laporan Banjir</h1>
-          </div>
-          <div className="input">
-            <input
-              type="text"
-              placeholder="Cari Derahmu"
-              value={searchTerm}
-              onChange={handleSearch}
-            />
-            <button>Cari</button>
-            <div className="search-results">
-              {filteredDaerah.map((daerah) => (
-                <div key={daerah.id}>
-                  <Link to={daerah.link}>{daerah.name}</Link>
-                </div>
-              ))}
-            </div>
+
+      {/* Bagian header */}
+      <header className="pb-0 mb-0 border-bottom transparent-bg d-flex justify-content-between align-items-center">
+        <div className="title">
+          <h1>Laporan Banjir</h1>
+        </div>
+        <div className="input">
+          <input
+            type="text"
+            placeholder="Cari Derahmu"
+            value={searchTerm}
+            onChange={handleSearch}
+          />
+          <div className="search-results">
+            {filteredDaerah.map((daerah) => (
+              <div key={daerah.id}>
+                <Link to={daerah.link}>{daerah.name}</Link>
+              </div>
+            ))}
           </div>
         </div>
-        <div className="content">
-          <div className="kiri">
-            <div className="kiri-content">
-              <div className="map">
-                <MapPreview />
+      </header>
+
+      <div className="p-0 mb-0 bg-body-tertiary rounded-3">
+        <div className="container-fluid py-3">
+          <h1 className="display-10 fw-bold">Peta Lokasi Banjir Surabaya</h1>
+          <div className="map">
+            <MapPreview />
+          </div>
+        </div>
+      </div>
+
+      {/* Konten utama */}
+      <div className="container-fluid py-0">
+        <div className="row align-items-md-stretch">
+          <div className="col-md-6">
+            <div className="h-100 p-5 text-bg-dark rounded-3">
+              {/* Bagian konfirmasi */}
+              <div className="konfirmasi mb-0">
+                <h2>Laporkan Kondisi Saat Ini</h2>
+                <button className="masih" onClick={increaseVote}>
+                  Daerah ini masih terjadi banjir
+                </button>
+                <button className="tidak" onClick={decreaseVote}>
+                  Daerah ini tidak terjadi banjir
+                </button>
               </div>
+
+              {/* Bagian komentar */}
+              <div className="komentar">
+                <div className="riwayat-laporan">
+                  {komentarData.slice().map((komentar, index) => (
+                    <div key={index}>
+                      <BiUserCircle className="user-logo" size={40} />
+                      <span className="komentar-text">{komentar.komentar}</span>
+                    </div>
+                  ))}
+                </div>
+              </div>
+
+              {/* Bagian submit komentar */}
               <div className="submit-komentar">
                 <input
                   type="text"
@@ -160,48 +193,29 @@ const MyLaporan = () => {
                 </button>
               </div>
             </div>
-            <div className="komentar-title">
-              <h3>Komentar</h3>
-            </div>
-            <div className="komentar">
-              <div className="riwayat-laporan">
-                {komentarData.slice(0, 5).map((komentar, index) => (
-                  <div key={index}>
-                    <BiUserCircle className="user-logo" size={40} />
-                    <span className="komentar-text">{komentar.komentar}</span>
-                  </div>
-                ))}
-              </div>
-            </div>
           </div>
-          <div className="kanan">
-            <div className="chart">
-              <div className="chart-laporan">
-                <ReactApexChart
-                  options={chartOptions}
-                  series={
-                    currentChartData
-                      ? [
-                          {
-                            name: "LAPORAN",
-                            data: currentChartData.data.votes,
-                          },
-                        ]
-                      : []
-                  }
-                  type="area"
-                  height={350}
-                />
+
+          <div className="col-md-6">
+            <div className="h-100 p-5 bg-body-tertiaryy border rounded-3">
+              <div className="chart">
+                <div className="chart-laporan">
+                  <ReactApexChart
+                    options={chartOptions}
+                    series={
+                      currentChartData
+                        ? [
+                            {
+                              name: "LAPORAN",
+                              data: currentChartData.data.votes,
+                            },
+                          ]
+                        : []
+                    }
+                    type="area"
+                    height={450}
+                  />
+                </div>
               </div>
-            </div>
-            <div className="konfirmasi">
-              <h2>Laporkan Kondisi Saat Ini</h2>
-              <button className="masih" onClick={increaseVote}>
-                Daerah ini masih terjadi banjir
-              </button>
-              <button className="tidak" onClick={decreaseVote}>
-                Daerah ini tidak terjadi banjir
-              </button>
             </div>
           </div>
         </div>
